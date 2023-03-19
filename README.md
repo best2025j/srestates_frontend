@@ -1,4 +1,4 @@
 
 srestates_frontend
 
-Backend codebase for this project
+Frontend codebase for this project
