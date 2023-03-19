@@ -129,34 +129,6 @@ export const Navbar = () => {
           </ul>
         </div>
       </div>
-
-      {/* <div
-        className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/80" : ""
-        }
-      >
-        <div
-          className={
-            nav
-              ? " "
-              : "w-full bg-slate-600"
-          }
-        >
-          <div className="">
-            <div>
-              <Link href="/">
-                <Image src={image} alt="home" className="w-12 h-8" />
-              </Link>
-
-              <div className="md:hidden cursor-pointer" onClick={handClose}>
-                <Image src={close} alt="close" className="w-6 h-6" />
-              </div>
-            </div>
-          </div>
-
-        
-        </div>
-      </div> */}
     </div>
   );
 };
