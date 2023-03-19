@@ -3,10 +3,9 @@ import React from 'react'
 
 const page = () => {
   return (
-  <main className=''>
+  <div className=''>
     <Navbar />
-    {/* <Hero /> */}
-  </main>
+  </div>
   )
 }
 

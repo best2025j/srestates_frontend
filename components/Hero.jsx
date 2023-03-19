@@ -3,7 +3,7 @@ import React from "react";
 import frame90 from "../public/assets/svg/Frame90.svg";
 import frame from "../public/assets/images/Frame.png";
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <div>
       <div className="relative">
@@ -22,5 +22,3 @@ const Hero = () => {
     </div>
   );
 };
-
-export default Hero;
