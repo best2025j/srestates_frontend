@@ -2,17 +2,21 @@
 import { useState } from "react";
 import Image from "next/image";
 import image from "../public/assets/images/HeaderLogo.png";
-import darkmode from "../public/assets/svg/Component3.svg";
+import darkmode from "../public/assets/svg/Darkmode.svg";
+import lightmode from "../public/assets/svg/Lightmode.svg";
 import menu from "../public/assets/svg/menu.svg";
 import close from "../public/assets/svg/close.svg";
 import Link from "next/link";
 import "animate.css";
+import { useTheme } from "next-themes";
 
-export const Navbar = () => {
+export const Header = () => {
   const [nav, setNav] = useState(false);
+
   const handClick = () => {
     setNav(!nav);
   };
+
   const handClose = () => {
     setNav(!nav);
   };
@@ -21,7 +25,7 @@ export const Navbar = () => {
     <div className="bg-orange_light h-[87px] py-[10.5px] px-[64px] w-full fixed z-[10]">
       <div className="flex justify-between h-full items-center">
         <Link href="/">
-          <Image src={image} alt="home" className="w-12 h-8" />
+          <Image src={image} alt="home" className="w-14 h-10" />
         </Link>
 
         <ul className="md:flex hidden space-x-10 items-center">
@@ -59,6 +63,14 @@ export const Navbar = () => {
                 className="w-14 h-[4.2rem]"
               />
             </button>
+
+            {/* <button>
+              <Image
+                src={lightmode}
+                alt="dark-mode"
+                className="w-14 h-[4.2rem]"
+              />
+            </button> */}
           </div>
         </ul>
 
@@ -77,7 +89,7 @@ export const Navbar = () => {
               : "fixed left-[-100%] h-screen top-0 p-5 ease-out duration-700 bg-white/40"
           }
         >
-          <div className="flex justify-between h-[87px] items-center">
+          <div className="flex justify-between h-[87px] bg-white items-center">
             <div>
               <Link href="/">
                 <Image src={image} alt="home" className="w-12 h-8" />

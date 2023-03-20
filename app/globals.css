@@ -4,10 +4,13 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
 }
 
-/* @layer base {
-  body {
-    @apply select-none font-Ubuntu;
-  } */
+
+@layer base {
+body {
+    @apply bg-white;
+  }
+}
+
