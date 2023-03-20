@@ -1,13 +1,13 @@
 "use client";
-import { Header } from "@/components/Header";
+import { Navbar } from "@/components/Navbar";
 import { ThemeProvider } from "next-themes";
 import React from "react";
 
 const page = () => {
   return (
     <ThemeProvider attribute="class">
-      <div className="">
-        <Header />
+      <div>
+        <Navbar />
       </div>
     </ThemeProvider>
   );
