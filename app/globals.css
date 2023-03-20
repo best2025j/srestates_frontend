@@ -7,10 +7,3 @@ html {
   font-family: "Ubuntu";
 }
 
-
-@layer base {
-body {
-    @apply bg-white;
-  }
-}
-

@@ -21,8 +21,16 @@ export const Header = () => {
     setNav(!nav);
   };
 
+  const { theme, setTheme } = useTheme();
+
   return (
-    <div className="bg-orange_light h-[87px] py-[10.5px] px-[64px] w-full fixed z-[10]">
+    <div
+      className={
+        theme
+          ? "bg-orange_light h-[87px] py-[10.5px] px-[64px] w-full fixed z-[10] "
+          : " h-[87px] py-[10.5px] px-[64px] w-full fixed z-[10] "
+      }
+    >
       <div className="flex justify-between h-full items-center">
         <Link href="/">
           <Image src={image} alt="home" className="w-14 h-10" />
@@ -50,27 +58,33 @@ export const Header = () => {
           </li>
 
           <div className="">
-            <button className=" bg-orange11 rounded-xl h-12 w-[169px] ">
+            <button className=" bg-orange10 rounded-xl h-12 w-[169px] ">
               <Link href="/signIn">Sign In</Link>
             </button>
           </div>
 
+          {/* button for changing  background color */}
           <div>
-            <button className="">
-              <Image
-                src={darkmode}
-                alt="dark-mode"
-                className="w-14 h-[4.2rem]"
-              />
+            <button
+              className=" "
+              onClick={() =>
+                theme === "dark" ? setTheme("light") : setTheme("dark")
+              }
+            >
+              {theme === "dark" ? (
+                <Image
+                  src={lightmode}
+                  alt="dark-mode"
+                  className="w-14 h-[4.2rem]"
+                />
+              ) : (
+                <Image
+                  src={darkmode}
+                  alt="dark-mode"
+                  className="w-14 h-[4.2rem]"
+                />
+              )}
             </button>
-
-            {/* <button>
-              <Image
-                src={lightmode}
-                alt="dark-mode"
-                className="w-14 h-[4.2rem]"
-              />
-            </button> */}
           </div>
         </ul>
 
@@ -124,18 +138,31 @@ export const Header = () => {
             </li>
 
             <div className="">
-              <button className=" bg-orange11 rounded-xl h-12 w-[169px] ">
+              <button className=" bg-orange10 rounded-xl h-12 w-[169px] ">
                 <Link href="/">Sign In</Link>
               </button>
             </div>
 
             <div>
-              <button className="">
-                <Image
-                  src={darkmode}
-                  alt="dark-mode"
-                  className="w-14 h-[4.2rem]"
-                />
+              <button
+                className=" "
+                onClick={() =>
+                  theme == "dark" ? setTheme("light") : setTheme("dark")
+                }
+              >
+                {theme == "dark" ? (
+                  <Image
+                    src={lightmode}
+                    alt="dark-mode"
+                    className="w-14 h-[4.2rem]"
+                  />
+                ) : (
+                  <Image
+                    src={darkmode}
+                    alt="dark-mode"
+                    className="w-14 h-[4.2rem]"
+                  />
+                )}
               </button>
             </div>
           </ul>
