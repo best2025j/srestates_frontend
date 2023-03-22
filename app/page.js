@@ -1,5 +1,5 @@
 "use client";
-// import { Hero } from "@/components/Hero";
+import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { Section } from "@/components/Section";
 import { ThemeProvider } from "next-themes";
@@ -10,7 +10,7 @@ const page = () => {
     <ThemeProvider attribute="class">
       <div>
         <Navbar />
-        {/* <Hero /> */}
+        <Hero />
         <Section />
       </div>
     </ThemeProvider>
