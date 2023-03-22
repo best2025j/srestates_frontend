@@ -12,8 +12,8 @@ const page = () => {
       <div>
         <Navbar />
         <Hero />
-        <Section />
-        <Isolation />
+        {/* <Section />
+        <Isolation /> */}
       </div>
     </ThemeProvider>
   );
