@@ -1,5 +1,6 @@
 "use client";
 import { Hero } from "@/components/Hero";
+import { Isolation } from "@/components/Isolation";
 import { Navbar } from "@/components/Navbar";
 import { Section } from "@/components/Section";
 import { ThemeProvider } from "next-themes";
@@ -12,6 +13,7 @@ const page = () => {
         <Navbar />
         <Hero />
         <Section />
+        <Isolation />
       </div>
     </ThemeProvider>
   );

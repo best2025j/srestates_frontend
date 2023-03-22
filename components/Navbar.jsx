@@ -4,11 +4,12 @@ import Image from "next/image";
 import image from "../public/assets/images/HeaderLogo.png";
 import darkmode from "../public/assets/svg/Darkmode.svg";
 import lightmode from "../public/assets/svg/Lightmode.svg";
-import menu from "../public/assets/svg/menu.svg";
-import close from "../public/assets/svg/close.svg";
+// import menu from "../public/assets/svg/menu.svg";
+// import close from "../public/assets/svg/close.svg";
 import Link from "next/link";
 import "animate.css";
 import { useTheme } from "next-themes";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 export const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -27,11 +28,11 @@ export const Navbar = () => {
     <div
       className={
         nav
-          ? " bg-orange_light dark:bg-black h-[87px] py-[10.5px] px-[64px] w-full fixed z-[10]"
-          : "dark:bg-black bg-orange_light h-[87px] py-[10.5px] px-[64px] w-full fixed z-[10]"
+          ? " bg-orange_light dark:bg-black h-[87px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
+          : "dark:bg-black bg-orange_light h-[87px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
       }
     >
-      <div className="flex justify-between h-full items-center">
+      <div className="flex justify-between h-full w-full items-center">
         <Link href="/">
           <Image src={image} alt="home" className="w-14 h-10" />
         </Link>
@@ -85,9 +86,12 @@ export const Navbar = () => {
         {/*  */}
         <button className="md:hidden cursor-pointer " onClick={handClick}>
           {nav ? (
-            <Image src={close} alt="menu" />
+            <AiOutlineClose className="w-7 h-7"/>
           ) : (
-            <Image src={menu} alt="menu" />
+            <AiOutlineMenu className="w-7 h-7"/>
+
+            // <Image src={close} alt="menu" />
+            // <Image src={menu} alt="menu" />
           )}
         </button>
       </div>

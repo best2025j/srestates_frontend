@@ -16,12 +16,8 @@ export const Hero = () => {
           <Image src={frame} alt="" className="w-full" />
         </div>
         <div className="">
-          <Image
-            src={frame90}
-            alt=" "
-            className=""
-          />
-          <div className=" ">
+          <Image src={frame90} alt=" " className="" />
+          <div className="py-40 ">
             <div className=" ">
               <h1 className="">
                 Find your dream roommate and your next bestfriend.
@@ -42,21 +38,11 @@ export const Hero = () => {
             </div>
 
             <div className="">
-              <Image
-                src={women}
-                alt="two african women"
-                className="l"
-              />
+              <Image className="" src={circle1} alt="circle1" />
+              <Image className="" src={circle2} alt="circle2" />
+              <Image className="" src={circle3} alt="circle3" />
 
-              <div className="">
-                <Image
-                  className=""
-                  src={circle1}
-                  alt="circle1"
-                />
-                <Image className="" src={circle2} alt="circle2" />
-                <Image className="" src={circle3} alt="circle3" />
-              </div>
+              <Image src={women} alt="two african women" className="" />
             </div>
           </div>
         </div>
