@@ -9,10 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/server": "^11.10.0",
+    "@mantine/core": "^6.0.4",
+    "@mantine/hooks": "^6.0.4",
+    "@mantine/next": "^6.0.4",
     "@react-icons/all-files": "^4.1.0",
     "animate.css": "^4.1.1",
+    "google-font": "^1.0.1",
     "next": "13.2.4",
     "next-themes": "^0.2.1",
+    "node": "^19.8.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0"
