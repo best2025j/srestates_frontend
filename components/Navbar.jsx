@@ -86,9 +86,9 @@ export const Navbar = () => {
         {/*  */}
         <button className="md:hidden cursor-pointer " onClick={handClick}>
           {nav ? (
-            <AiOutlineClose className="w-7 h-7"/>
+            <AiOutlineClose className="w-7 h-7" />
           ) : (
-            <AiOutlineMenu className="w-7 h-7"/>
+            <AiOutlineMenu className="w-7 h-7" />
 
             // <Image src={close} alt="menu" />
             // <Image src={menu} alt="menu" />
