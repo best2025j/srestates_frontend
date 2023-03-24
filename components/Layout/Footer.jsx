@@ -10,7 +10,7 @@ import facebook from "../../public/assets/svg/facebook logo(1).svg";
 
 const Footer = () => {
   return (
-    <footer className="px-4 text-white top-[700px] relative bg-[#002F43] w-full h-[537px] grid grid-rows-1">
+    <footer className="px-4 text-white top-[700px] relative dark:bg-black bg-[#002F43] w-full h-[537px] grid grid-rows-1">
       <div className="absolute top-6">
         <Image src={image1} alt="logo image" />
       </div>
