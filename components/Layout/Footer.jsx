@@ -1,4 +1,4 @@
-// import { Select } from "@mantine/core";
+import { Select } from "@mantine/core";
 import Image from "next/image";
 import React from "react";
 import image1 from "../../public/assets/images/Logo2.png";
@@ -6,12 +6,12 @@ import map from "../../public/assets/svg/map.svg";
 import message from "../../public/assets/svg/message.svg";
 import twitter from "../../public/assets/svg/twitter logo.svg";
 import instagram from "../../public/assets/svg/instagram.svg";
-import facebook from "../../public/assets/svg/facebook logo(1).svg";
+import facebook from "../../public/assets/svg/facebook logo.svg";
 
 const Footer = () => {
   return (
     <footer className="px-4 text-white mt-[700px] relative bg-[#002F43] py-10 space-y-10 dark:bg-black h-full w-full">
-      <div className="space-y-10 flex space-x-6 flex-col md:flex-row justify-around mx-auto">
+      <div className="space-y-10 flex space-x-6 py-10 border-b-2 flex-col md:flex-row justify-around mx-auto">
         <div className="h-auto w-auto">
           <Image
             src={image1}
@@ -62,19 +62,17 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-80 h-12 mx-auto">
-          <select
-            name="cars"
-            id="cars"
-            className="w-full h-full flex justify-center text-black items-center"
-          >
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
-          </select>
+        <div className="w-80 h-14">
+          <Select
+            placeholder="Pick one"
+            data={[
+              { value: "englsh", label: "Englsh" },
+              { value: "yoruba", label: "Yoruba" },
+            ]}
+          />
         </div>
       </div>
+
       <div className="text-center py-5">
         <p>&copy; 2022 Studentrealestates inc.</p>
       </div>
