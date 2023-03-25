@@ -1,4 +1,4 @@
-import { Select } from "@mantine/core";
+// import { Select } from "@mantine/core";
 import Image from "next/image";
 import React from "react";
 import image1 from "../../public/assets/images/Logo2.png";
@@ -10,24 +10,29 @@ import facebook from "../../public/assets/svg/facebook logo(1).svg";
 
 const Footer = () => {
   return (
-    <footer className="px-4 text-white top-[700px] relative dark:bg-black bg-[#002F43] w-full h-[537px] grid grid-rows-1">
-      <div className="absolute top-6">
-        <Image src={image1} alt="logo image" />
-      </div>
-      <div className="flex justify-center space-x-20 border-b-2 py-20">
+    <footer className="px-4 text-white mt-[700px] relative bg-[#002F43] py-10 space-y-10 dark:bg-black h-full w-full">
+      <div className="space-y-10 flex space-x-6 flex-col md:flex-row justify-around mx-auto">
+        <div className="h-auto w-auto">
+          <Image
+            src={image1}
+            alt="logo image"
+            className="w-[218px] h-[60px] md:w-[302px] md:h-[82px]"
+          />
+        </div>
+
         <div className="space-y-6 ">
           <h3 className="font-2xl font-bold underline underline-offset-8 decoration-2 ">
             Contact
           </h3>
-          <div className="flex felx-row space-x-4">
+          <div className="flex flex-row space-x-4">
             <span>
               <Image src={map} alt="map" />
             </span>
             <h2>Lekki, Lagos</h2>
           </div>
-          <div className="flex felx-row space-x-4">
+          <div className="flex flex-row space-x-4">
             <span>
-              <Image src={message} alt="text message" />
+              <Image src={message} alt="message" />
             </span>
             <h2>info@studentrealestates.com</h2>
           </div>
@@ -37,32 +42,40 @@ const Footer = () => {
           <h3 className="font-2xl font-bold underline underline-offset-8 decoration-2 ">
             Social Media
           </h3>
-          <div className="flex felx-row space-x-4">
+          <div className="flex flex-row space-x-4">
             <span>
-              <Image src={twitter} alt="text twitter" />
+              <Image src={twitter} alt="twitter" />
             </span>
             <h2>Twitter</h2>
           </div>
-          <div className="flex felx-row space-x-4">
+          <div className="flex flex-row space-x-4">
             <span>
-              <Image src={instagram} alt="text instagram" />
+              <Image src={instagram} alt="instagram" />
             </span>
             <h2>Instagram</h2>
           </div>
-          <div className="flex felx-row space-x-4">
+          <div className="flex flex-row space-x-4">
             <span>
-              <Image src={facebook} alt="text facebook" />
+              <Image src={facebook} alt="facebook" />
             </span>
             <h2>Facebook</h2>
           </div>
         </div>
 
-        <Select
-          placeholder="Pick one"
-          data={[{ value: "english", label: "English" }]}
-        />
+        <div className="w-80 h-12 mx-auto">
+          <select
+            name="cars"
+            id="cars"
+            className="w-full h-full flex justify-center text-black items-center"
+          >
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
       </div>
-      <div className="text-center py-8 ">
+      <div className="text-center py-5">
         <p>&copy; 2022 Studentrealestates inc.</p>
       </div>
     </footer>
