@@ -10,11 +10,11 @@ const Pagination = () => {
     <div className="h-full w-full py-20">
       <div className="text-center space-y-[10px]">
         <div className="">
-          <h1 className="text-[3.2rem] font-bold">
+          <h1 className="md:text-[3.2rem] text-[26px] font-bold">
             Check Out Our Recent Reviews
           </h1>
         </div>
-        <p className="font-normal text-2xl">
+        <p className="font-normal text-sm md:text-2xl">
           Our reviews are from individuals like you who have similar interest.
         </p>
       </div>

@@ -6,12 +6,12 @@ import image2 from "../../public/assets/images/Frame 96(2).png";
 
 export const Section = () => {
   return (
-    <div className="w-full h-full md:mt-40 px-10">
+    <div className="w-full h-full md:mt-40 mb-40 px-10">
       <div className="text-center">
-        <h1 className=" text-[52px] font-bold">Our Interest</h1>
-        <p className="text-2xl font-normal">
+        <h1 className="text-[26px] md:text-[52px] font-bold">Our Interest</h1>
+        <h1 className="md:text-2xl text-xs font-normal">
           At studentrealestates we major in two things which are...
-        </p>
+        </h1>
       </div>
       <div className="py-20 md:flex justify-between items-center">
         <div className="flex md:flex-row flex-col">

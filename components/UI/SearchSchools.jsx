@@ -6,7 +6,7 @@ import image3 from "../../public/assets/images/isolation mode.png";
 
 const SearchSchools = () => {
   return (
-    <div className="h-full w-full relative bg-blue-300 ">
+    <div className="h-full w-full relative bg-blue-300 mt-20">
       <div>
         <Image src={image3} className="w-full h-full" alt="isolation" />
       </div>
@@ -47,16 +47,6 @@ const SearchSchools = () => {
             className="w-[400px] h-20"
           />
         </div>
-
-        {/* <div className="text-center pt-16">
-          <div className="">
-            <input
-              type="search"
-              className="border-2 bg-inherit  h-[72px] w-[676px] rounded-xl"
-              
-            />
-          </div>
-        </div> */}
       </div>
     </div>
   );
