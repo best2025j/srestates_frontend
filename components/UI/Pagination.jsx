@@ -19,7 +19,7 @@ const Pagination = () => {
         </p>
       </div>
 
-      <div className="flex text-center justify-center py-16 items-center h-full w-full gap-28 ">
+      <div className="flex text-center justify-center py-16 items-center h-full w-full ">
         <Button className="bg-orange10" disabled>
           <FaAngleLeft size={20} />
         </Button>

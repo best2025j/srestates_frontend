@@ -12,7 +12,7 @@ import "animate.css";
 
 export const Hero = () => {
   return (
-    <div className="h-full w-full pb-40 md:pb-0">
+    <div className="h-screen w-full pb-40 md:pb-0">
       <div className="relative">
         <Image
           src={frame}
@@ -20,7 +20,7 @@ export const Hero = () => {
           className="w-full object-cover h-full mix-blend-normal"
         />
 
-        <div className="absolute top-0 my-20 flex flex-col md:flex-row justify-between px-[38px]">
+        <div className="absolute top-0 mt-20 md:flex md:flex-row justify-between px-[38px]">
           <div className="">
             <div className="md:pl-10 pt-[5px]">
               <Image

@@ -1,6 +1,6 @@
 "use client";
+import Footer from "@/components/Layout/Footer";
 import Header from "@/components/Layout/Header";
-import Layout from "@/components/Layout/layout";
 import { Hero } from "@/components/UI/Hero";
 import Pagination from "@/components/UI/Pagination";
 import SearchSchools from "@/components/UI/SearchSchools";
@@ -14,12 +14,12 @@ const page = () => {
     <MantineProvider theme={{ loader: "bars" }}>
       <ThemeProvider attribute="class">
         <Suspense fallback={<loading />}>
-          <Layout>
-            <Hero />
-            <Section />
-            {/* <SearchSchools />
-            <Pagination /> */}
-          </Layout>
+          <Header />
+          <Hero />
+          <Section />
+          <SearchSchools />
+          <Pagination />
+          <Footer />
         </Suspense>
       </ThemeProvider>
     </MantineProvider>

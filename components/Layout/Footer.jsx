@@ -10,7 +10,7 @@ import facebook from "../../public/assets/svg/facebook logo.svg";
 
 const Footer = () => {
   return (
-    <footer className="px-4 text-white mt-[700px] relative bg-[#002F43] py-10 space-y-10 dark:bg-black h-full w-full">
+    <footer className="px-4 text-white relative bg-[#002F43] py-10 space-y-10 dark:bg-black h-full w-full">
       <div className="space-y-10 flex space-x-6 py-10 border-b-2 flex-col md:flex-row justify-around mx-auto">
         <div className="h-auto w-auto">
           <Image
