@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import man from "../../public/assets/images/man.png";
 import { Button } from "@mantine/core";
+import "animate.css";
 
 const Pagination = () => {
   return (

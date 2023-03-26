@@ -17,8 +17,8 @@ const page = () => {
           <Layout>
             <Hero />
             <Section />
-            <SearchSchools />
-            <Pagination />
+            {/* <SearchSchools />
+            <Pagination /> */}
           </Layout>
         </Suspense>
       </ThemeProvider>
