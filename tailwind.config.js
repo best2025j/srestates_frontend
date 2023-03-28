@@ -10,14 +10,19 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    colors: {
-      orange_light: "#FDF3EB",
-      orange10: "#FE5200",
-      orange11: "#FE5200",
-      white: "#F2F2F2",
-    },
+    extend: {
+      // fontFamily: {
+      //   Ubuntu: ["crossorigin"],
+      // },
 
-    extend: {},
+      colors: {
+        black: "#181818",
+        orange_light: "#FDF3EB",
+        orange10: "#FE5200",
+        // orange11: "#FE5200",
+        white: "#F2F2F2",
+      },
+    },
   },
 
   plugins: [],

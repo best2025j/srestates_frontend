@@ -1,13 +1,28 @@
 "use client";
-import { Header } from "@/components/Header";
-// import { ThemeProvider } from "next-themes";
-import React from "react";
+import Footer from "@/components/Layout/Footer";
+import Header from "@/components/Layout/Header";
+import { Hero } from "@/components/UI/Hero";
+import Pagination from "@/components/UI/Pagination";
+import SearchSchools from "@/components/UI/SearchSchools";
+import { Section } from "@/components/UI/Section";
+import { MantineProvider } from "@mantine/core";
+import { ThemeProvider } from "next-themes";
+import React, { Suspense } from "react";
 
 const page = () => {
   return (
-      <div className="">
-        <Header />
-      </div>
+    <MantineProvider theme={{ loader: "bars" }}>
+      <ThemeProvider attribute="class">
+        <Suspense fallback={<loading />}>
+          <Header />
+          <Hero />
+          <Section />
+          <SearchSchools />
+          <Pagination />
+          <Footer />
+        </Suspense>
+      </ThemeProvider>
+    </MantineProvider>
   );
 };
 
