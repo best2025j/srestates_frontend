@@ -19,8 +19,6 @@ git branch # just to check current branch
 
 ### 3. Install dependencies
 
-It is encouraged to use **yarn** so the husky hooks can work properly.
-
 ```bash
 npm install
 ```
