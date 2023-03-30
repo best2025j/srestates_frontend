@@ -10,6 +10,9 @@ cd srestates_frontend
 ### 2. Make change on your feature branch from `origin/development` branch as HEAD.
 
 ```bash
+git fetch origin development #to pull remote development branch to your local system 
+git checkout development #to switch to development locally 
+git pull origin development #to pull remote changes 
 git checkout -b <your-feature-branch> origin/development
 git branch # just to check current branch
 ```
