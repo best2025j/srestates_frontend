@@ -6,7 +6,7 @@ import image3 from "../../public/assets/images/isolation mode.png";
 
 const SearchSchools = () => {
   return (
-    <div className="h-full w-full relative bg-blue-300 mt-20">
+    <div className="h-full w-full relative mt-20">
       <div>
         <Image src={image3} className="w-full h-full" alt="isolation" />
       </div>
@@ -17,7 +17,7 @@ const SearchSchools = () => {
           <h1>University on Studentrealestates</h1>
         </div>
 
-        <div className="grid md:grid-cols-5 grid-cols-2 text-center gap-8">
+        <div className="grid md:grid-cols-5 grid-cols-2 text-center gap-8 w-[90%] mx-auto">
           <p>University of Lagos</p>
           <p>University of Lagos</p>
           <p>University of Lagos</p>

@@ -4,7 +4,7 @@ import Form from "../Form";
 
 export default function DirectMessage() {
   return (
-    <div>
+    <div className="bg-orange_light">
       <div>
         <h1>Shoot Us a Direct Message If You Need Any Help</h1>
         <p>At Studentrealestate we major in two things, which are...</p>
