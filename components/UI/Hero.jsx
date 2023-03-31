@@ -20,8 +20,8 @@ export const Hero = () => {
           className="w-full object-cover h-full mix-blend-normal"
         />
 
-        <div className="absolute top-0 mt-20 md:flex md:flex-row justify-between px-[38px]">
-          <div className="">
+        <div className="absolute top-0 mt-20 md:flex flex-1 md:flex-row justify-between">
+          <div className="pl-10">
             <div className="md:pl-10 pt-[5px]">
               <Image
                 src={frame90}
