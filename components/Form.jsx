@@ -1,40 +1,55 @@
-import { Button, Input, TextInput, Textarea } from "@mantine/core";
+"use client";
+import { Button } from "@mantine/core";
 import React from "react";
-import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
-import { IoMdContact } from "react-icons/io";
+import { IoMdContact, IoMdMail } from "react-icons/io";
 import { MdOutlineAlternateEmail, MdOutlinePhoneIphone } from "react-icons/md";
 
 const Form = () => {
   return (
     <>
-      <div className="bg-orange_light w-[1133px] h-[740px] rounded-xl justify-center items-center mx-auto">
-        <form className="flex md:flex-row">
-          <div className="w-[474px] h-full gap-20">
-            <div className="mb-4">
-              <TextInput
-                label="Name"
+      <div className="bg-orange_light w-[900px] h-full rounded-xl justify-center flex items-center mx-auto">
+        <form className="flex gap-10">
+          <div className="space-y-10">  
+            <div className="relative">
+              {/* <label htmlFor="Name">Name</label> */}
+              <input
+                type="text"
                 placeholder="David Niti"
-                icon={<IoMdContact className="text-black/60" />}
+                className="py-2 pl-10 w-96 h-10 rounded-full"
               />
+              <div className="absolute top-3 insert-y-0 left-0 flex items-center pl-2">
+                <IoMdContact className="text-black/80 h-5 w-5" />
+              </div>
             </div>
-            <div className="mb-4">
-              <TextInput
-                label="Email"
+            <div className="relative">
+              {/* <label htmlFor="Name">Name</label> */}
+              <input
+                type="email"
                 placeholder="ericabams@gmail.com"
-                icon={<MdOutlineAlternateEmail className="text-black/60" />}
+                className="py-2 pl-10 w-96 h-10 rounded-full"
               />
+              <div className="absolute top-3 insert-y-0 left-0 flex items-center pl-2">
+                <IoMdMail className="text-black/80 h-5 w-5" />
+              </div>
             </div>
-            <div className="mb-4">
-              <TextInput
-                label="phone"
+            <div className="relative">
+              {/* <label htmlFor="Name">Name</label> */}
+              <input
+                type="text"
                 placeholder="your number"
-                icon={<MdOutlinePhoneIphone className="text-black/60" />}
+                className="py-2 pl-10 w-96 h-10 rounded-full"
               />
+              <div className="absolute top-3 insert-y-0 left-0 flex items-center pl-2">
+                <MdOutlinePhoneIphone className="text-black/80 h-5 w-5" />
+              </div>
             </div>
           </div>
 
-          <div className="mb-4 w-[400px] h-[600px]">
-            <Textarea label="Message" placeholder="Your Message" className="h-[700px] w-[200px]" />
+          <div className="mb-4">
+            <textarea
+              placeholder="Your Message"
+              className="h-screen bg-white border-none border outline-none rounded-[20px] w-[470px]"
+            />
           </div>
 
           {/* <div className="flex items-center justify-center">
