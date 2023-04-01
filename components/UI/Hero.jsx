@@ -4,7 +4,7 @@ import React from "react";
 import frame90 from "../../public/assets/svg/Frame90.svg";
 import image1 from "../../public/assets/svg/fb.svg";
 import image2 from "../../public/assets/svg/ig.svg";
-import image3 from "../../public/assets/svg/Twitter.svg";
+import image3 from "../../public/assets/svg/Twitter logo.svg";
 import image4 from "../../public/assets/svg/Whatsapp.svg";
 import frame from "../../public/assets/images/Frame.png";
 import women from "../../public/assets/images/ladies2.png";
