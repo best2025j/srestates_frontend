@@ -4,7 +4,7 @@ import React from "react";
 import image1 from "../../public/assets/images/Logo2.png";
 import map from "../../public/assets/svg/map.svg";
 import message from "../../public/assets/svg/message.svg";
-import twitter from "../../public/assets/svg/twitter logo.svg";
+import twitter from "../../public/assets/images/tw logo.png";
 import instagram from "../../public/assets/svg/instagram.svg";
 import facebook from "../../public/assets/svg/facebook logo.svg";
 

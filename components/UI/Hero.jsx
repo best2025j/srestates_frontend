@@ -4,7 +4,7 @@ import React from "react";
 import frame90 from "../../public/assets/svg/Frame90.svg";
 import image1 from "../../public/assets/svg/fb.svg";
 import image2 from "../../public/assets/svg/ig.svg";
-import image3 from "../../public/assets/svg/Twitter.svg";
+import image3 from "../../public/assets/svg/Twitter logo.svg";
 import image4 from "../../public/assets/svg/Whatsapp.svg";
 import frame from "../../public/assets/images/Frame.png";
 import women from "../../public/assets/images/ladies2.png";
@@ -20,8 +20,8 @@ export const Hero = () => {
           className="w-full object-cover h-full mix-blend-normal"
         />
 
-        <div className="absolute top-0 mt-20 md:flex md:flex-row justify-between px-[38px]">
-          <div className="">
+        <div className="absolute top-0 mt-20 md:flex flex-1 md:flex-row justify-between">
+          <div className="pl-10">
             <div className="md:pl-10 pt-[5px]">
               <Image
                 src={frame90}
@@ -64,7 +64,7 @@ export const Hero = () => {
             <Image
               src={women}
               alt="two african women"
-              className="h-full w-full md:h-[686px] md:w-[952px] animate__animated animate__fadeIn"
+              className=" md:h-[686px] md:w-[952px] animate__animated animate__fadeIn"
             />
           </div>
         </div>
