@@ -43,7 +43,7 @@ const Pagination = () => {
       <div className="flex justify-center items-center gap-4">
         <div>
           <Image src={man} alt="man" />
-        </div>
+        </div> 
         <div>
           <h3 className="font-bold text-2xl">Leonard Italy</h3>
           <i className="">Chemistry Student EKSU</i>

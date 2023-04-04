@@ -7,56 +7,58 @@ import { MdOutlineAlternateEmail, MdOutlinePhoneIphone } from "react-icons/md";
 const Form = () => {
   return (
     <>
-      <div className="bg-orange_light py-20 px-16 my-20 w-[900px] h-full rounded-xl justify-center flex items-center mx-auto">
-        <form className="flex gap-10">
-          <div className="space-y-10">
-            <div className="relative">
-              {/* <label htmlFor="Name">Name</label> */}
-              <input
-                type="text"
-                placeholder="David Niti"
-                className="py-2 pl-14 w-80 h-[50px] bg-white rounded-[22px]"
-              />
-              <div className="absolute top-3 insert-y-0 left-0 flex items-center pl-4">
-                <IoMdContact className="text-black/80 h-6 w-6" />
+      <div>
+        <form className="md:flex gap-10 justify-center">
+          <div className="space-y-6">
+            <div>
+              <label htmlFor="Name">Name</label>
+              <div className="relative mt-2">
+                <input
+                  type="text"
+                  placeholder="David Niti"
+                  className="pl-14 w-80 h-[50px] bg-white rounded-[22px]"
+                />
+                <div className="absolute top-3 insert-y-0 left-0 flex items-center pl-4">
+                  <IoMdContact className="text-black/80 h-6 w-6" />
+                </div>
               </div>
             </div>
-            <div className="relative">
-              {/* <label htmlFor="Name">Name</label> */}
-              <input
-                type="email"
-                placeholder="ericabams@gmail.com"
-                className="py-2 pl-14 w-80 h-[50px] border border-[#00A0E3] outline-[#00A0E3] rounded-[22px]"
-              />
-              <div className="absolute top-3 insert-y-0 left-0 flex items-center pl-4">
-                <IoMdMail className="text-black/80 h-6 w-6" />
+
+            <div>
+              <label htmlFor="Name">Email</label>
+              <div className="relative mt-2">
+                <input
+                  type="email"
+                  placeholder="ericabams@gmail.com"
+                  className="pl-14 w-80 h-[50px] border border-[#00A0E3] outline-[#00A0E3] rounded-[22px]"
+                />
+                <div className="absolute top-3 insert-y-0 left-0 flex items-center pl-4">
+                  <IoMdMail className="text-black/80 h-6 w-6" />
+                </div>
               </div>
             </div>
-            <div className="relative">
-              {/* <label htmlFor="Name">Name</label> */}
-              <input
-                type="text"
-                placeholder="your number"
-                className="py-2 pl-14 w-80 h-[50px] bg-white rounded-[22px]"
-              />
-              <div className="absolute top-3 insert-y-0 left-0 flex items-center pl-4">
-                <MdOutlinePhoneIphone className="text-black/80 h-6 w-6" />
+
+            <div>
+              <label htmlFor="Name">Phone number</label>
+              <div className="relative mt-2">
+                <input
+                  type="text"
+                  placeholder="your number"
+                  className="pl-14 w-80 h-[50px] bg-white rounded-[22px]"
+                />
+                <div className="absolute top-3 insert-y-0 left-0 flex items-center pl-4">
+                  <MdOutlinePhoneIphone className="text-black/80 h-6 w-6" />
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="mb-4">
+          <div className="my-4">
             <textarea
               placeholder="Your Message"
-              className="h-[260px] px-6 py-10 bg-white border-none border outline-none rounded-[20px]  placeholder:pl-5 w-[470px]"
+              className="md:h-[275px] px-6 py-10 bg-white border-none border outline-none rounded-[20px] w-full h-80 placeholder:pl-5 md:w-[470px]"
             />
           </div>
-
-          {/* <div className="flex items-center justify-center">
-            <Button className="rounded py-2 px-4 bg-orange10">
-              send message
-            </Button>
-          </div> */}
         </form>
       </div>
     </>

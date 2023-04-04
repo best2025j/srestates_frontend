@@ -1,6 +1,7 @@
 "use client";
 import Footer from "@/components/Layout/Footer";
 import Header from "@/components/Layout/Header";
+import Bg_image from "@/components/UI/Bg_image";
 import DirectMessage from "@/components/UI/DirectMessage";
 import { Hero } from "@/components/UI/Hero";
 import Pagination from "@/components/UI/Pagination";
@@ -21,6 +22,7 @@ const page = () => {
           <SearchSchools />
           <Pagination />
           <DirectMessage />
+          <Bg_image />
           <Footer />
         </Suspense>
       </ThemeProvider>

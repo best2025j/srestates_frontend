@@ -41,11 +41,16 @@ const SearchSchools = () => {
         </div>
 
         <div className="flex items-center justify-center">
-          <InputBase
-            icon={<AiOutlineSearch />}
-            placeholder="Search for university"
-            className="w-[400px] h-20"
-          />
+          <div className="relative mt-2">
+            <input
+              type="text"
+              placeholder="David Niti"
+              className="pl-14 w-96 h-[40px] bg-white rounded-[22px]"
+            />
+            <div className="absolute top-2 insert-y-0 left-0 flex items-center pl-4">
+              <AiOutlineSearch className="text-black/80 h-6 w-6" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
