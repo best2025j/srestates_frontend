@@ -8,7 +8,7 @@ import "animate.css";
 const Pagination = () => {
   return (
     <div className="h-full w-full py-20">
-      <div className="mx-auto py-6 space-y-[10px] md:max-w-3xl max-w-xs">
+      <div className="mx-auto py-6 space-y-[10px] text-center md:max-w-3xl max-w-xs">
         <div className="">
           <h1 className="md:text-[3.2rem] text-[26px] font-bold">
             Check Out Our Recent Reviews
