@@ -8,7 +8,7 @@ const Form = () => {
   return (
     <>
       <div>
-        <form className="md:flex gap-10 justify-center">
+        <form className="gap-10 justify-center items-center flex-col md:flex-row flex">
           <div className="space-y-6">
             <div>
               <label htmlFor="Name">Name</label>
@@ -56,7 +56,7 @@ const Form = () => {
           <div className="my-4">
             <textarea
               placeholder="Your Message"
-              className="md:h-[275px] px-6 py-10 bg-white border-none border outline-none rounded-[20px] w-full h-80 placeholder:pl-5 md:w-[470px]"
+              className="md:h-[275px] px-6 py-10 bg-white border-none border outline-none rounded-[20px] w-80 h-80 placeholder:pl-5 md:w-[470px]"
             />
           </div>
         </form>
