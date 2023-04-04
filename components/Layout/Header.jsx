@@ -27,8 +27,8 @@ const Header = () => {
     <header
       className={
         nav
-          ? " bg-orange_light dark:bg-black h-[87px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
-          : "dark:bg-black bg-orange_light h-[87px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
+          ? " bg-orange_light dark:bg-black h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
+          : "dark:bg-black bg-orange_light h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
       }
     >
       <nav className="flex justify-between h-full w-full items-center">
@@ -36,7 +36,7 @@ const Header = () => {
           <Image
             src={image}
             alt="home"
-            className="w-14 h-10 md:w-full md:h-full"
+            className="w-14 h-10 md:w-16 md:h-12"
           />
         </Link>
 
