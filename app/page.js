@@ -1,6 +1,7 @@
 "use client";
 import Footer from "@/components/Layout/Footer";
 import Header from "@/components/Layout/Header";
+import Layout from "@/components/Layout/layout";
 import Bg_image from "@/components/UI/Bg_image";
 import DirectMessage from "@/components/UI/DirectMessage";
 import { Hero } from "@/components/UI/Hero";
@@ -16,14 +17,14 @@ const page = () => {
     <MantineProvider theme={{ loader: "bars" }}>
       <ThemeProvider attribute="class">
         <Suspense fallback={<loading />}>
-          <Header />
-          <Hero />
-          <Section />
-          <SearchSchools />
-          <Pagination />
-          <DirectMessage />
-          <Bg_image />
-          <Footer />
+          <Layout>
+            <Hero />
+            <Section />
+            <SearchSchools />
+            <Pagination />
+            <DirectMessage />
+            <Bg_image />
+          </Layout>
         </Suspense>
       </ThemeProvider>
     </MantineProvider>
