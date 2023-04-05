@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import React from "react";
 import image from "../../public/assets/images/young_women.png";

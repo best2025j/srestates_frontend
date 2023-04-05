@@ -40,18 +40,13 @@ const Header = () => {
           <li>
             <Link
               href="/"
-              className="text-orange10 hover:underline underline-offset-4 decoration-4"
+              className="text-orange10 underline underline-offset-4 decoration-4"
             >
               Home
             </Link>
           </li>
           <li>
-            <Link
-              href="/about"
-              className="active:text-orange10 hover:text-gray-800 focus:text-orange10 hover:underline underline-offset-4 decoration-4"
-            >
-              About Us
-            </Link>
+            <Link href="/about">About Us</Link>
           </li>
           <li>
             <Link href="/contact">Contact Us</Link>
