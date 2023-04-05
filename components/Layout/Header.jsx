@@ -33,24 +33,25 @@ const Header = () => {
     >
       <nav className="flex justify-between h-full w-full items-center">
         <Link href="/">
-          <Image
-            src={image}
-            alt="home"
-            className="w-14 h-10 md:w-16 md:h-12"
-          />
+          <Image src={image} alt="home" className="w-14 h-10 md:w-16 md:h-12" />
         </Link>
 
         <ul className="md:flex hidden items-center space-x-6">
           <li>
             <Link
               href="/"
-              className="text-orange10 underline underline-offset-4 decoration-4"
+              className="active:text-orange10 active:underline hover:underline underline-offset-4 decoration-4"
             >
               Home
             </Link>
           </li>
           <li>
-            <Link href="/about">About Us</Link>
+            <Link
+              href="/about"
+              className="active:text-orange10 active:underline hover:underline underline-offset-4 decoration-4"
+            >
+              About Us
+            </Link>
           </li>
           <li>
             <Link href="/contact">Contact Us</Link>

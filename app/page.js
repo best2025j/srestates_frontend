@@ -1,6 +1,6 @@
 "use client";
-import Footer from "@/components/Layout/Footer";
-import Header from "@/components/Layout/Header";
+// import Footer from "@/components/Layout/Footer"; 
+// import Header from "@/components/Layout/Header";
 import Layout from "@/components/Layout/layout";
 import Bg_image from "@/components/UI/Bg_image";
 import DirectMessage from "@/components/UI/DirectMessage";

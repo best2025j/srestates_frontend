@@ -15,12 +15,27 @@ module.exports = {
       //   Ubuntu: ["crossorigin"],
       // },
 
+      underline: {
+        display: 'block',
+        width: '100%',
+        height: '2px',
+        backgroundColor: '#FE5200',
+        transform: 'scaleX(0)',
+        transition: 'transform 0.2s ease-in-out',
+      },
+
       colors: {
         black: "#181818",
         orange_light: "#FDF3EB",
         orange10: "#FE5200",
         white: "#F2F2F2",
       },
+    },
+  },
+
+   variants: {
+    extend: {
+      textDecoration: ['hover', 'focus'],
     },
   },
 
