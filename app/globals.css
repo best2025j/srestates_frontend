@@ -13,19 +13,5 @@ html {
   }
 }
 
-Link::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #FE5200;
-  transform: scaleX(0);
-  transition: transform 0.2s ease-in-out;
-}
-
-Link:hover::after {
-  transform: scaleX(1);
-}
-
 
 
