@@ -1,14 +1,13 @@
-"use client";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
-import image from "../../public/assets/images/HeaderLogo.png";
-import darkmode from "../../public/assets/svg/Darkmode.svg";
-import lightmode from "../../public/assets/svg/Lightmode.svg";
+import image from "../../Assets/images/HeaderLogo.png";
+import darkmode from "../../Assets/svg/Darkmode.svg";
+import lightmode from "../../Assets/svg/Lightmode.svg";
 import "animate.css";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -22,7 +21,7 @@ const Header = () => {
     setNav(!nav);
   };
 
-  const router = useRouter();
+  // const router = useRouter();
   return (
     <header
       className={
