@@ -2,7 +2,7 @@ import { InputBase } from "@mantine/core";
 import Image from "next/image";
 import React from "react";
 import { AiOutlineSearch } from "react-icons/ai";
-import image3 from "../../public/assets/images/isolation mode.png";
+import image3 from "../../Assets/images/isolation mode.png";
 
 const SearchSchools = () => {
   return (
@@ -38,7 +38,7 @@ const SearchSchools = () => {
           <p>University of Lagos</p>
           <p>University of Lagos</p>
         </div>
-        
+
         <div className=" md:hidden grid grid-cols-2 text-center gap-6 w-[90%] mx-auto">
           <p>University of Lagos</p>
           <p>University of Lagos</p>

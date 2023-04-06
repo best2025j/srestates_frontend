@@ -1,7 +1,7 @@
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Image from "next/image";
 import React from "react";
-import man from "../../public/assets/images/man.png";
+import man from "../../Assets/images/man.png";
 import { Button } from "@mantine/core";
 import "animate.css";
 
@@ -43,7 +43,7 @@ const Pagination = () => {
       <div className="flex justify-center items-center gap-4">
         <div>
           <Image src={man} alt="man" className="w-16 h-16" />
-        </div> 
+        </div>
         <div>
           <h3 className="font-bold md:text-2xl">Leonard Italy</h3>
           <i className="">Chemistry Student EKSU</i>

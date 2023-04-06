@@ -1,4 +1,3 @@
-"use client";
 import { Button } from "@mantine/core";
 import React from "react";
 import { IoMdContact, IoMdMail } from "react-icons/io";
