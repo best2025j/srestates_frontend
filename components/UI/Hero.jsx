@@ -25,7 +25,7 @@ export const Hero = () => {
               <Image
                 src={frame90}
                 alt=""
-                // className="w-[136px] h-[58px] md:w-full md:h-full"
+                className="w-[136px] h-[58px] md:w-full md:h-full"
               />
             </div>
 
@@ -51,10 +51,18 @@ export const Hero = () => {
               </div>
 
               <div className="flex flex-row space-x-[36px] md:space-x-24">
-                <Image src={image1} alt="fb" />
-                <Image src={image2} alt="ig" />
-                <Image src={image3} alt="tw" />
-                <Image src={image4} alt="wh" />
+                <div>
+                  <Image src={image1} alt="fb" />
+                </div>
+                <div>
+                  <Image src={image2} alt="ig" />
+                </div>
+                <div>
+                  <Image src={image3} alt="tw" />
+                </div>
+                <div>
+                  <Image src={image4} alt="wh" />
+                </div>
               </div>
             </div>
           </div>
