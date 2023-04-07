@@ -32,7 +32,7 @@ const Header = () => {
     >
       <nav className="flex justify-between h-full w-full items-center">
         <Link href="/">
-          <Image src={image} alt="home" className="w-14 h-10 md:w-16 md:h-12" />
+          <Image src={image} alt="home" className="w-4 h-4" />
         </Link>
 
         <ul className="md:flex hidden items-center space-x-6">
@@ -69,10 +69,14 @@ const Header = () => {
               <Image
                 src={lightmode}
                 alt="dark-mode"
-                className="w-14 h-[3rem]"
+                className="w-14 h-[3rem] md:w-8 md:h-8"
               />
             ) : (
-              <Image src={darkmode} alt="dark-mode" className="w-14 h-[3rem]" />
+              <Image
+                src={darkmode}
+                alt="dark-mode"
+                className="w-14 h-[3rem] md:w-8 md:h-8"
+              />
             )}
           </button>
         </ul>

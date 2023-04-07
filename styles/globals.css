@@ -9,7 +9,7 @@ html {
 
 @layer base {
     body {
-        @apply select-none font-serif bg-white dark:bg-black/20;
+        @apply font-serif bg-white dark:bg-black/20;
       }
 
   /* button {
