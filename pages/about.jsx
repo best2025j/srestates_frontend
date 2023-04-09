@@ -90,7 +90,7 @@ export default function about({ props }) {
           <Image src={image3} alt="" className="" />
         </div>
 
-        <div className="flex justify-center items-center space-x-1">
+        <div className="flex items-center space-x-1">
           <button className="bg-orange10 w-5 h-1 rounded-full" />
           <button className="bg-orange10 w-2 h-1 rounded-full" />
           <button className="bg-orange10 w-2 h-1 rounded-full" />
@@ -132,7 +132,7 @@ export default function about({ props }) {
           </div>
         </div>
       </div>
-
+{/*  */}
       <div className="">
         <div>
           <h1 className="text-[52px] font-bold">Our Core Values</h1>
