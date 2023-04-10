@@ -2,13 +2,14 @@ import { InputBase } from "@mantine/core";
 import Image from "next/image";
 import React from "react";
 import { AiOutlineSearch } from "react-icons/ai";
-import Background_Image from "../Background_Image";
+import image3 from "../../Assets/images/isolation mode.png";
 
 const SearchSchools = () => {
   return (
     <div className="h-full w-full relative md:mt-20 ">
-      <Background_Image />
-    
+      <div>
+        <Image src={image3} className="w-full h-full" alt="isolation" />
+      </div>
 
       {/* <div className="space-y-10 h-full justify-center top-0 absolute w-full mx-auto flex flex-col pt-[20rem]"> */}
       <div className="h-full justify-center top-0 absolute w-full flex py-32 flex-col space-y-[64px]">

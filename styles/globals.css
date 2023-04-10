@@ -4,28 +4,15 @@
 
 html {
   scroll-behavior: smooth;
+  /* font-family: 'Raleway', sans-serif; */
 }
 
 @layer base {
-  body {
-    @apply font-serif bg-white dark:bg-black/20 ;
-  }
-}
+    body {
+        @apply select-none font-serif bg-white dark:bg-black/20;
+      }
 
-@layer utilities {
-  @variants responsive {
-
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-
-    /* Hide scrollbar for IE, Edge and Firefox */
-    .no-scrollbar {
-      -ms-overflow-style: none;
-      /* IE and Edge */
-      scrollbar-width: none;
-      /* Firefox */
-    }
-  }
+  /* button {
+    @apply text-white shadow shadow-black active: scale-105 rounded-xl font-medium;
+  } */
 }
