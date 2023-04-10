@@ -9,6 +9,8 @@ import "animate.css";
 import { Carousel } from "@mantine/carousel";
 import Background_Image from "../components/Background_Image";
 import Table from "../components/Table";
+import Pagination from "../components/UI/Pagination";
+// import MdWifiFind from "react-icons/md";
 
 export const metaData = {
   title: "About",
@@ -134,26 +136,51 @@ export default function about({ props }) {
       </div>
 
       <div className="">
-        <div>
+        <div className="flex items-center flex-col">
           <h1 className="text-[52px] font-bold">Our Core Values</h1>
           <p className="font-normal text-[23px]">
             At Studentrealestate we major in two things, which are...
           </p>
         </div>
-        <div>
+
+        <div className="flex flex-row items-center gap-[92px] px-24">
           <div className="space-y-[20px]">
-            <div></div>
+            <div>1</div>
             <div>
               <h1 className="text-2xl">Serve First</h1>
-              <p className="text-lg font-400">
+              <p className="text-lg font-400 max-w-xl">
                 We are very dedicated to serving our clients and our dream is
                 fufilling their obligations.
               </p>
             </div>
           </div>
-          <div></div>
-          <div></div>
+          <div className="space-y-[20px]">
+            <div>2</div>
+            <div>
+              <h1 className="text-2xl">Transparency</h1>
+              <p className="text-lg font-400 max-w-xl">
+                We are very sentitive to our clients personal details or
+                information. We are also accountable for their funds.
+              </p>
+            </div>
+          </div>
+          <div className="space-y-[20px]">
+            <div>3</div>
+            <div>
+              <h1 className="text-2xl">Reliability</h1>
+              <p className="text-lg font-400 max-w-xl">
+                : our team and member of staffs are very dedicated to their role
+                and as such reliable. Are you in need of our service(s)? You can
+                count on us anytime, anyday!
+              </p>
+            </div>
+          </div>
+          
         </div>
+      </div>
+      {/*  */}
+      <div>
+        <Pagination />
       </div>
     </div>
   );
