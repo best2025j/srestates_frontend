@@ -2,6 +2,11 @@ import React from "react";
 import Image from "next/image";
 import image from "../Assets/images/young_women.png";
 import "animate.css";
+// import { Carousel } from "@mantine/carousel";
+import Background_Image from "../components/Background_Image";
+import Table from "../components/Table";
+import Pagination from "../components/UI/Pagination";
+// import MdWifiFind from "react-icons/md";
 
 export const metaData = {
   title: "About",
@@ -9,7 +14,7 @@ export const metaData = {
 
 export default function about({props}) {
   return (
-    <>
+    <div>
       <div className="md:py-[4.5rem] py-5 dark:text-black text-white h-full w-full">
         <div className="relative">
           <div className="animate__animated animate__pulse bg-gradient-to-r from-[#FE5200] to-[#00A0E3] h-full w-full">
@@ -65,6 +70,102 @@ export default function about({props}) {
           </p>
         </div>
       </div>
-    </>
+
+      <div className="flex flex-col py-56 space-y-6">
+        <div className="flex ml-16 h-full overflow-x-scroll no-scrollbar">
+          <Image src={image1} alt="" className="" />
+          <Image src={image2} alt="" className="" />
+          <Image src={image3} alt="" className="" />
+        </div>
+
+        <div className="flex justify-center items-center space-x-1">
+          <button className="bg-orange10 w-5 h-1 rounded-full" />
+          <button className="bg-orange10 w-2 h-1 rounded-full" />
+          <button className="bg-orange10 w-2 h-1 rounded-full" />
+        </div>
+      </div>
+
+      <div className="w-full h-full">
+        <h1 className="text-[52px] text-center font-bold">Our Achievements</h1>
+        <div className="relative">
+          <Background_Image />
+
+          {/* table */}
+
+          <div class="flex items-center justify-center h-full">
+            <div class="absolute top-0 flex flex-col items-center w-full">
+              <Table />
+
+              <div className="flex flex-row items-start gap-[277px] mt-40">
+                <h1 className="text-[52px] font-bold max-w-[20rem]">
+                  What We Do
+                </h1>
+
+                <div className="space-y-[46px]">
+                  <h1 className="text-3xl font-bold">
+                    Finding roommate and friends
+                  </h1>
+                  <p className="text-2xl font-[400] max-w-[38rem]">
+                    We are keen on reducing the stress and time that rises from
+                    the quest for a roommate in Nigerian institutions, and
+                    Africa as a whole. Studentrealestates leverages on
+                    contemporary user database to provide the individual that
+                    best suit your personality as a roommate. We perpetually
+                    strive to identify pairs that are compatible and have
+                    potentials to stay together for a longer period.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="">
+        <div className="flex items-center flex-col">
+          <h1 className="text-[52px] font-bold">Our Core Values</h1>
+          <p className="font-normal text-[23px]">
+            At Studentrealestate we major in two things, which are...
+          </p>
+        </div>
+        <div className="flex flex-row items-center gap-[92px] px-24">
+          <div className="space-y-[20px]">
+            <div>1</div>
+            <div>
+              <h1 className="text-2xl">Serve First</h1>
+              <p className="text-lg font-400 max-w-xl">
+                We are very dedicated to serving our clients and our dream is
+                fufilling their obligations.
+              </p>
+            </div>
+          </div>
+          <div className="space-y-[20px]">
+            <div>2</div>
+            <div>
+              <h1 className="text-2xl">Transparency</h1>
+              <p className="text-lg font-400 max-w-xl">
+                We are very sentitive to our clients personal details or
+                information. We are also accountable for their funds.
+              </p>
+            </div>
+          </div>
+          <div className="space-y-[20px]">
+            <div>3</div>
+            <div>
+              <h1 className="text-2xl">Reliability</h1>
+              <p className="text-lg font-400 max-w-xl">
+                : our team and member of staffs are very dedicated to their role
+                and as such reliable. Are you in need of our service(s)? You can
+                count on us anytime, anyday!
+              </p>
+            </div>
+          </div>
+        </div>
+        {/*  */}
+        <div>
+          <Pagination />
+        </div>
+      </div>
+    </div>
   );
 }
