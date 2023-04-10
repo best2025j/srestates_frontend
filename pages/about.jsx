@@ -3,7 +3,6 @@ import Image from "next/image";
 import image from "../Assets/images/young_women.png";
 import "animate.css";
 // import { Carousel } from "@mantine/carousel";
-import Background_Image from "../components/Background_Image";
 import Table from "../components/Table";
 import Pagination from "../components/UI/Pagination";
 // import MdWifiFind from "react-icons/md";
@@ -12,7 +11,7 @@ export const metaData = {
   title: "About",
 };
 
-export default function about({props}) {
+export default function about({ props }) {
   return (
     <div>
       <div className="md:py-[4.5rem] py-5 dark:text-black text-white h-full w-full">
