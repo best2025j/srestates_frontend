@@ -87,7 +87,7 @@ export default function about({ props }) {
       <div className="w-full h-full">
         <h1 className="text-[52px] text-center font-bold">Our Achievements</h1>
         <div className="relative">
-          <Background_Image />
+          {/* <Background_Image /> */}
 
           {/* table */}
 
