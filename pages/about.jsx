@@ -2,14 +2,11 @@ import React from "react";
 import Image from "next/image";
 import image from "../Assets/images/young_women.png";
 import "animate.css";
-<<<<<<< HEAD
-=======
 import { Carousel } from "@mantine/carousel";
 import Background_Image from "../components/Background_Image";
 import Table from "../components/Table";
 import Pagination from "../components/UI/Pagination";
 // import MdWifiFind from "react-icons/md";
->>>>>>> feat/design
 
 export const metaData = {
   title: "About",
