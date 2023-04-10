@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import image from "../Assets/images/young_women.png";
 import "animate.css";
-// import { Carousel } from "@mantine/carousel";
+import { Carousel } from "@mantine/carousel";
 import Table from "../components/Table";
 import Pagination from "../components/UI/Pagination";
 // import MdWifiFind from "react-icons/md";
