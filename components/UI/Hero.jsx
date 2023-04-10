@@ -19,13 +19,13 @@ export const Hero = () => {
           className="w-full object-cover h-full mix-blend-normal"
         />
 
-        <div className="absolute top-0 mt-20 md:flex flex-1 md:flex-row justify-between">
-          <div className="pl-10">
-            <div className="md:pl-10 pt-[5px]">
+        <div className="absolute top-0 mt-[4rem] md:flex flex-1 md:flex-row justify-between">
+          <div className="md:max-w-xl md:px-8 px-6">
+            <div className="md:pl-10 pl-5 pt-[4px]">
               <Image
                 src={frame90}
                 alt=""
-                className="w-[136px] h-[58px] md:w-full md:h-full"
+                className="w-[136px] h-[58px] md:w-auto md:h-auto"
               />
             </div>
 
@@ -50,7 +50,7 @@ export const Hero = () => {
                 </button>
               </div>
 
-              <div className="flex flex-row space-x-[36px] md:space-x-24">
+              <div className="flex flex-row space-x-[20px] md:space-x-20">
                 <div>
                   <Image src={image1} alt="fb" />
                 </div>
@@ -71,7 +71,7 @@ export const Hero = () => {
             <Image
               src={women}
               alt="two african women"
-              className=" md:h-[686px] md:w-[952px] animate__animated animate__fadeIn"
+              className=" md:h-[686px] md:w-[952px] animate__animated animate__fadeIn object-cover"
             />
           </div>
         </div>
