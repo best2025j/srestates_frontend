@@ -32,44 +32,31 @@ const Header = () => {
     >
       <nav className="flex justify-between h-full w-full items-center">
         <Link href="/">
-          <Image src={image} alt="home" className="w-12 h-10" />
+          <Image src={image} alt="home" className="w-14 h-10 md:w-16 md:h-12" />
         </Link>
 
         <ul className="md:flex hidden items-center space-x-6">
           <li>
             <Link
               href="/"
-              className="hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
+              className="text-orange10 underline underline-offset-4 decoration-4"
             >
               Home
             </Link>
           </li>
           <li>
-            <Link
-              href="/about"
-              className="hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
-            >
-              About Us
-            </Link>
+            <Link href="/about">About Us</Link>
           </li>
           <li>
-            <Link
-              href="/contact"
-              className="hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
-            >
-              Contact Us
-            </Link>
+            <Link href="/contact">Contact Us</Link>
           </li>
           <li>
-            <Link
-              href="/login"
-              className="hover:text-orange10 active:text-orange10 focus:text-orange10"
-            >
+            <Link href="/login" className="text-orange10">
               Log In
             </Link>
           </li>
 
-          <button className=" bg-orange10 rounded-xl h-10 w-[169px] ">
+          <button className=" bg-orange10 rounded-xl h-12 w-[169px] ">
             <Link href="/signIn">Sign In</Link>
           </button>
 
@@ -82,14 +69,10 @@ const Header = () => {
               <Image
                 src={lightmode}
                 alt="dark-mode"
-                className="w-14 h-[3rem] md:w-12 md:h-10"
+                className="w-14 h-[3rem]"
               />
             ) : (
-              <Image
-                src={darkmode}
-                alt="dark-mode"
-                className="w-14 h-[3rem] md:w-12 md:h-10"
-              />
+              <Image src={darkmode} alt="dark-mode" className="w-14 h-[3rem]" />
             )}
           </button>
         </ul>
@@ -117,32 +100,19 @@ const Header = () => {
           <li onClick={handClose}>
             <Link
               href="/"
-              className="hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
+              className="text-orange10 underline underline-offset-4 decoration-4"
             >
               Home
             </Link>
           </li>
           <li onClick={handClose}>
-            <Link
-              className="hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
-              href="/about"
-            >
-              About Us
-            </Link>
+            <Link href="/about">About Us</Link>
           </li>
           <li onClick={handClose}>
-            <Link
-              className="hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
-              href="/contact"
-            >
-              Contact Us
-            </Link>
+            <Link href="/contact">Contact Us</Link>
           </li>
           <li onClick={handClose}>
-            <Link
-              className="text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
-              href="/login"
-            >
+            <Link href="/login" className="text-orange11">
               Log In
             </Link>
           </li>
