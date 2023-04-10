@@ -83,14 +83,14 @@ export default function about({ props }) {
         </div>
       </div>
 
-      <div className="flex flex-col">
-        <div className="flex py-56 ml-16 h-full overflow-x-scroll no-scrollbar">
+      <div className="flex flex-col py-56 space-y-6">
+        <div className="flex ml-16 h-full overflow-x-scroll no-scrollbar">
           <Image src={image1} alt="" className="" />
           <Image src={image2} alt="" className="" />
           <Image src={image3} alt="" className="" />
         </div>
 
-        <div className="flex items-center space-x-1">
+        <div className="flex justify-center items-center space-x-1">
           <button className="bg-orange10 w-5 h-1 rounded-full" />
           <button className="bg-orange10 w-2 h-1 rounded-full" />
           <button className="bg-orange10 w-2 h-1 rounded-full" />
@@ -104,11 +104,11 @@ export default function about({ props }) {
 
           {/* table */}
 
-          <div class="flex items-center justify-center h-screen">
+          <div class="flex items-center justify-center h-full">
             <div class="absolute top-0 flex flex-col items-center w-full">
               <Table />
 
-              <div className="flex flex-row items-start gap-[277px] my-40">
+              <div className="flex flex-row items-start gap-[277px] mt-40">
                 <h1 className="text-[52px] font-bold max-w-[20rem]">
                   What We Do
                 </h1>
@@ -132,7 +132,7 @@ export default function about({ props }) {
           </div>
         </div>
       </div>
-{/*  */}
+
       <div className="">
         <div>
           <h1 className="text-[52px] font-bold">Our Core Values</h1>
