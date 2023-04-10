@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Form from "../Form";
 
@@ -7,7 +6,6 @@ export default function DirectMessage() {
     <div className="flex flex-col w-full h-full  justify-center items-center mx-auto ">
       <div className="text-center max-w-xs md:max-w-3xl space-y-[10px]">
         <h1 className="md:text-[3.2rem] text-[1.63rem] font-bold ">
-        
           Shoot Us a Direct Message If You Need Any Help
         </h1>
         <p className="md:text-2xl font-[400] text-xs">
