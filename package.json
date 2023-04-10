@@ -18,13 +18,9 @@
     "@mantine/next": "^6.0.6",
     "animate.css": "^4.1.1",
     "embla-carousel-react": "^7.1.0",
-<<<<<<< HEAD
+
     "next": "13.3.0",
-=======
-    "eslint-config-next": "^13.3.0",
-    "google-font": "^1.0.1",
-    "next": "12.3",
->>>>>>> development
+
     "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
