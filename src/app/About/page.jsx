@@ -1,17 +1,37 @@
-import React from "react";
+// "use client";
+// import React from "react";
 import Image from "next/image";
+<<<<<<< HEAD:src/app/About/page.jsx
+import image from "../../../Assets/images/young_women.png";
+import image1 from "../../../Assets/images/african-american-men-white-t-shirts.png";
+import image2 from "../../../Assets/images/full-shot-smiley-men-sitting-curb.png";
+import image3 from "../../../Assets/images/two-african-woman-friends-jeans-jacket-posed-indoor-together.png";
+import frame90 from "../../../Assets/svg/Frame90.svg";
+import "animate.css";
+import { Carousel } from "@mantine/carousel";
+import Table from "../../../components/Table";
+import Pagination from "../../../components/UI/Pagination";
+import MdWifiFind from "react-icons/md";
+import Background_Image from "@/components/Background_Image";
+=======
 import image from "../Assets/images/young_women.png";
+import image1 from "../Assets/images/african-american-men-white-t-shirts.png";
+import image2 from "../Assets/images/full-shot-smiley-men-sitting-curb.png";
+import image3 from "../Assets/images/two-african-woman-friends-jeans-jacket-posed-indoor-together.png";
+import frame90 from "../Assets/svg/Frame90.svg";
 import "animate.css";
 // import { Carousel } from "@mantine/carousel";
-// import Table from "../components/Table";
-// import Pagination from "../components/UI/Pagination";
+import Table from "../components/Table";
+import Background_Image from "../components/Background_Image";
+import Pagination from "../components/UI/Pagination";
 // import MdWifiFind from "react-icons/md";
+>>>>>>> 535c1415d2577556c3e616db15b9a3fd98581066:pages/about.jsx
 
 export const metaData = {
   title: "About",
 };
 
-export default function about({ props }) {
+export default function About() {
   return (
     <div>
       <div className="md:py-[4.5rem] py-5 dark:text-black text-white h-full w-full">
@@ -39,10 +59,10 @@ export default function about({ props }) {
 
             <div className=" flex md:flex-row  flex-col md:space-x-6 space-y-4 md:space-y-0">
               <button className="sm:w-[264px] w-[150px] h-[45px] bg-orange10 sm:h-[60.1px] rounded-xl">
-                Request Roomate
+                Request RoomMate
               </button>
               <button className="sm:w-[264px] w-[150px] h-[45px] border border-orange10 sm:h-[60.1px] rounded-xl">
-                Request Roomate
+                Request RoomMate
               </button>
             </div>
           </div>
@@ -51,21 +71,21 @@ export default function about({ props }) {
         <div>
           <h1>Who We Are?</h1>
           <p>
-            Studentrealestates is one of the most admired companies in the
+            Student-real-estates is one of the most admired companies in the
             academic industry of Nigeria. We offer services that are themselves,
-            benchmarks in their respective categories. Today, studentrealestates
-            is the undisputed leader in the pairing of roommates across Nigerian
-            institutions.
+            benchmarks in their respective categories. Today,
+            student-real-estates is the undisputed leader in the pairing of
+            roommates across Nigerian institutions.
           </p>
         </div>
         <div>
           <h1>Who We Are?</h1>
           <p>
-            Studentrealestates is one of the most admired companies in the
+            Student-real-estates is one of the most admired companies in the
             academic industry of Nigeria. We offer services that are themselves,
-            benchmarks in their respective categories. Today, studentrealestates
-            is the undisputed leader in the pairing of roommates across Nigerian
-            institutions.
+            benchmarks in their respective categories. Today,
+            student-real-estates is the undisputed leader in the pairing of
+            roommates across Nigerian institutions.
           </p>
         </div>
       </div>
@@ -87,7 +107,7 @@ export default function about({ props }) {
       <div className="w-full h-full">
         <h1 className="text-[52px] text-center font-bold">Our Achievements</h1>
         <div className="relative">
-          {/* <Background_Image /> */}
+          <Background_Image />
 
           {/* table */}
 
@@ -107,7 +127,7 @@ export default function about({ props }) {
                   <p className="text-2xl font-[400] max-w-[38rem]">
                     We are keen on reducing the stress and time that rises from
                     the quest for a roommate in Nigerian institutions, and
-                    Africa as a whole. Studentrealestates leverages on
+                    Africa as a whole. Student-real-estates leverages on
                     contemporary user database to provide the individual that
                     best suit your personality as a roommate. We perpetually
                     strive to identify pairs that are compatible and have
@@ -124,9 +144,10 @@ export default function about({ props }) {
         <div className="flex items-center flex-col">
           <h1 className="text-[52px] font-bold">Our Core Values</h1>
           <p className="font-normal text-[23px]">
-            At Studentrealestate we major in two things, which are...
+            At Student-real-estate we major in two things, which are...
           </p>
         </div>
+
         <div className="flex flex-row items-center gap-[92px] px-24">
           <div className="space-y-[20px]">
             <div>1</div>
@@ -134,7 +155,7 @@ export default function about({ props }) {
               <h1 className="text-2xl">Serve First</h1>
               <p className="text-lg font-400 max-w-xl">
                 We are very dedicated to serving our clients and our dream is
-                fufilling their obligations.
+                fulfilling their obligations.
               </p>
             </div>
           </div>
@@ -143,7 +164,7 @@ export default function about({ props }) {
             <div>
               <h1 className="text-2xl">Transparency</h1>
               <p className="text-lg font-400 max-w-xl">
-                We are very sentitive to our clients personal details or
+                We are very sensitive to our clients personal details or
                 information. We are also accountable for their funds.
               </p>
             </div>
@@ -155,7 +176,7 @@ export default function about({ props }) {
               <p className="text-lg font-400 max-w-xl">
                 : our team and member of staffs are very dedicated to their role
                 and as such reliable. Are you in need of our service(s)? You can
-                count on us anytime, anyday!
+                count on us anytime, any day!
               </p>
             </div>
           </div>

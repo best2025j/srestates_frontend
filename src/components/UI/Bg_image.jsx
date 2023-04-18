@@ -1,7 +1,8 @@
+"use client"
 import Image from "next/image";
 import { BackgroundImage } from "@mantine/core";
 import React from "react";
-import group_pix from "../../Assets/images/Groupimage.png";
+import group_pix from "../../../Assets/images/Groupimage.png";
 
 export default function Bg_image() {
   return (
@@ -16,7 +17,7 @@ export default function Bg_image() {
           <div className="max-w-xs md:max-w-[70rem] ">
             <h1 className="md:text-[3.3rem] font-bold text-[24px]">
               Would You Like To Know How To Get A Friend Or Roommate On
-              Studentrealestate?
+              Student-real-estate?
             </h1>
             <p className="text-sm">
               <i>
