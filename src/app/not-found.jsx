@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <div className="h-full md:flex justify-center items-center w-full py-60">
+    <div className="h-full md:flex justify-center items-center w-full py-40">
       <div className="space-y-[50px] px-14">
         <h1 className="text-3xl font-bold">WE ARE SORRY, PAGE NOT FOUND!</h1>
         <p className="max-w-md">
@@ -20,7 +20,7 @@ export default function NotFound() {
         <Image
           src={image}
           alt="error image"
-          className="w-[321px] h-[200px] md:w-auto md:h-auto flex pt-6 md:pt-0  animate__animated animate__fadeOut md:p-0 mx-auto"
+          className="w-[321px] h-[200px] md:w-auto md:h-auto md:flex pt-6 md:pt-0 animate__animated animate__fadeIn md:p-0 mx-auto"
         />
       </div>
     </div>

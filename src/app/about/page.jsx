@@ -1,7 +1,5 @@
-// "use client";
-// import React from "react";
+"use client";
 import Image from "next/image";
-<<<<<<< HEAD:src/app/About/page.jsx
 import image from "../../../Assets/images/young_women.png";
 import image1 from "../../../Assets/images/african-american-men-white-t-shirts.png";
 import image2 from "../../../Assets/images/full-shot-smiley-men-sitting-curb.png";
@@ -9,29 +7,17 @@ import image3 from "../../../Assets/images/two-african-woman-friends-jeans-jacke
 import frame90 from "../../../Assets/svg/Frame90.svg";
 import "animate.css";
 import { Carousel } from "@mantine/carousel";
-import Table from "../../../components/Table";
-import Pagination from "../../../components/UI/Pagination";
+import Table from "../../components/Table";
+import Pagination from "../../components/UI/Pagination";
 import MdWifiFind from "react-icons/md";
 import Background_Image from "@/components/Background_Image";
-=======
-import image from "../Assets/images/young_women.png";
-import image1 from "../Assets/images/african-american-men-white-t-shirts.png";
-import image2 from "../Assets/images/full-shot-smiley-men-sitting-curb.png";
-import image3 from "../Assets/images/two-african-woman-friends-jeans-jacket-posed-indoor-together.png";
-import frame90 from "../Assets/svg/Frame90.svg";
-import "animate.css";
-// import { Carousel } from "@mantine/carousel";
-import Table from "../components/Table";
-import Background_Image from "../components/Background_Image";
-import Pagination from "../components/UI/Pagination";
-// import MdWifiFind from "react-icons/md";
->>>>>>> 535c1415d2577556c3e616db15b9a3fd98581066:pages/about.jsx
+
 
 export const metaData = {
   title: "About",
 };
 
-export default function About() {
+export default function AboutPage() {
   return (
     <div>
       <div className="md:py-[4.5rem] py-5 dark:text-black text-white h-full w-full">
