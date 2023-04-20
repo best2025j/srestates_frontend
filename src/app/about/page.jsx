@@ -5,13 +5,17 @@ import image1 from "../../../Assets/images/african-american-men-white-t-shirts.p
 import image2 from "../../../Assets/images/full-shot-smiley-men-sitting-curb.png";
 import image3 from "../../../Assets/images/two-african-woman-friends-jeans-jacket-posed-indoor-together.png";
 import frame90 from "../../../Assets/svg/Frame90.svg";
+import cross from "../../../Assets/svg/firstAid.svg";
+import blood from "../../../Assets/svg/blood.svg";
+import wifi from "../../../Assets/svg/wifi-find.svg";
 import "animate.css";
 import { Carousel } from "@mantine/carousel";
 import Table from "../../components/Table";
 import Pagination from "../../components/UI/Pagination";
 import MdWifiFind from "react-icons/md";
 import Background_Image from "@/components/Background_Image";
-
+import DirectMessage from "@/components/UI/DirectMessage";
+import Bg_image from "@/components/UI/Bg_image";
 
 export const metaData = {
   title: "About",
@@ -126,7 +130,7 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <div className="">
+      <div className="py-20">
         <div className="flex items-center flex-col">
           <h1 className="text-[52px] font-bold">Our Core Values</h1>
           <p className="font-normal text-[23px]">
@@ -134,9 +138,11 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="flex flex-row items-center gap-[92px] px-24">
+        <div className="flex flex-row items-center gap-[92px] px-24 py-[99px]">
           <div className="space-y-[20px]">
-            <div>1</div>
+            <div>
+              <Image src={cross} alt="cross" />
+            </div>
             <div>
               <h1 className="text-2xl">Serve First</h1>
               <p className="text-lg font-400 max-w-xl">
@@ -146,7 +152,9 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="space-y-[20px]">
-            <div>2</div>
+            <div>
+              <Image src={blood} alt="cross" />
+            </div>
             <div>
               <h1 className="text-2xl">Transparency</h1>
               <p className="text-lg font-400 max-w-xl">
@@ -156,7 +164,9 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="space-y-[20px]">
-            <div>3</div>
+            <div>
+              <Image src={wifi} alt="cross" />
+            </div>
             <div>
               <h1 className="text-2xl">Reliability</h1>
               <p className="text-lg font-400 max-w-xl">
@@ -170,6 +180,14 @@ export default function AboutPage() {
         {/*  */}
         <div>
           <Pagination />
+        </div>
+        {/*  */}
+        <div className="py-60">
+          <DirectMessage />
+        </div>
+        {/*  */}
+        <div className="">
+          <Bg_image />
         </div>
       </div>
     </div>

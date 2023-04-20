@@ -21,18 +21,10 @@ const Pagination = () => {
         </p>
       </div>
 
-      <div
-        style={{
-          height: 900,
-          alignItems: "center",
-          display: "flex",
-          width: "100%",
-          justifyContent: "center",
-        }}
-      >
+      <div className="">
         <Carousel
           withIndicators
-          height={600}
+          height={400}
           max={300}
           controlSize={40}
           slideGap="md"
@@ -48,7 +40,7 @@ const Pagination = () => {
         >
           <Carousel.Slide>
             <div className="space-y-10 max-w-[866px] flex justify-center items-center mx-auto flex-col h-full ">
-              <div className="font-bold text-bold py-14">
+              <div className="font-bold text-2xl">
                 <i>Found A Roommate</i>
               </div>
               <i className="text-2xl text-center">
@@ -75,7 +67,7 @@ const Pagination = () => {
           </Carousel.Slide>
           <Carousel.Slide>
             <div className="space-y-10 max-w-[866px] flex justify-center items-center mx-auto flex-col h-full ">
-              <div className="font-bold text-bold py-14">
+              <div className="font-bold text-2xl">
                 <i>Found A Roommate</i>
               </div>
               <i className="text-2xl text-center">
@@ -102,7 +94,7 @@ const Pagination = () => {
           </Carousel.Slide>
           <Carousel.Slide>
             <div className="space-y-10 max-w-[866px] flex justify-center items-center mx-auto flex-col h-full ">
-              <div className="font-bold text-bold py-14">
+              <div className="font-bold text-2xl">
                 <i>Found A Roommate</i>
               </div>
               <i className="text-2xl text-center">
@@ -130,28 +122,11 @@ const Pagination = () => {
         </Carousel>
       </div>
 
-      {/* <div className="flex mx-auto text-center items-center justify-between py-16 h-80 w-[80%] ">
-        <Button className="bg-orange10" disabled>
-          <FaAngleLeft size={20} className="" />
-        </Button>
+      <div className="">
+        
+      </div>
 
-        <div className="space-y-12 max-w-[866px]">
-          <div className="font-bold text-bold py-14">
-            <i>Found A Roommate</i>
-          </div>
-          <i className="text-2xl ">
-            “I’m very pleased with this website. I came across it 2022 and I had
-            no regrets whatsoever. I’ve recommended it to so many friends and
-            family. I got my roommate from here and there is no issue. I just
-            wish Student-real-estates becomes viral because it makes roommate
-            pairing easier.”
-          </i>
-        </div>
-
-        <Button className="bg-orange10">
-          <FaAngleRight size={20} />
-        </Button>
-      </div> */}
+     
     </div>
   );
 };
