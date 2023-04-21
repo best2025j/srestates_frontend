@@ -31,7 +31,7 @@ export const Section = () => {
           </div>
         </div>
         <div>
-          <Image src={image} alt="" />
+          <Image src={image} alt="two ladies" />
         </div>
       </div>
 
@@ -53,7 +53,7 @@ export const Section = () => {
         </div>
 
         <div>
-          <Image src={image2} alt="" />
+          <Image src={image2} alt="ladies2" />
         </div>
       </div>
     </div>
