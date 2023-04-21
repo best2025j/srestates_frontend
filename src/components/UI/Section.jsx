@@ -30,9 +30,8 @@ export const Section = () => {
             </button>
           </div>
         </div>
-        <div>
+        
           <Image src={image} alt="two ladies" />
-        </div>
       </div>
 
       <div className="md:flex justify-between md:flex-row-reverse items-center">
