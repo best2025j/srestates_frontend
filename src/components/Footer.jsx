@@ -64,17 +64,14 @@ const Footer = () => {
         </div>
 
         <div className="w-80 h-14">
-          <select name="" id="">
+          <select
+            name=""
+            id=""
+            className="w-full rounded text-black dark:text-white h-10"
+          >
             <option value="eng">English</option>
             <option value="yor">Yoruba</option>
           </select>
-          {/* <Select
-            placeholder="Pick one"
-            data={[
-              { value: "englsh", label: "Englsh" },
-              { value: "yoruba", label: "Yoruba" },
-            ]}
-          /> */}
         </div>
       </div>
 

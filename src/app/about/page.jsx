@@ -33,6 +33,13 @@ export default function AboutPage() {
               className="h-[636px] w-full md:h-auto md:w-auto mix-blend-overlay opacity-50"
             />
           </div>
+          <div className="md:pl-10 pl-5 pt-[4px] absolute top-0">
+            <Image
+              src={frame90}
+              alt=""
+              className="w-[136px] h-[58px] md:w-auto md:h-auto"
+            />
+          </div>
 
           <div className="flex justify-center items-center animate__animated animate__backInDown inset-0 left-0 h-full flex-col absolute top-0 text-center w-full md:space-y-[105px]">
             <div className="max-w-xs md:max-w-[70rem] ">
@@ -182,7 +189,7 @@ export default function AboutPage() {
           <Pagination />
         </div>
         {/*  */}
-        <div className="py-60">
+        <div className="pt-40">
           <DirectMessage />
         </div>
         {/*  */}

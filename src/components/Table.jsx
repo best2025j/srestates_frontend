@@ -3,7 +3,7 @@ import ProgressBar from "./ProgressBar";
 
 export default function Table() {
   return (
-    <div className="max-w-3xl h-full px-[64px] grid grid-cols-3 gap-60 py-10">
+    <div className="w-[80%] h-full  grid grid-cols-3 gap-60 py-10">
       <div className="space-y-[174px]">
         <div className="space-x-4 flex justify-center items-center">
           <div>
@@ -68,7 +68,7 @@ export default function Table() {
           <div className="">
             <h1 className="font-bold text-[72px]">12</h1>
             <span className="text-[#828282] text-[24px] font-[400]">
-              Sites Visit
+              Finished Design Sprints
             </span>
           </div>
         </div>
@@ -82,7 +82,7 @@ export default function Table() {
           <div className="">
             <h1 className="font-bold text-[72px]">2</h1>
             <span className="text-[#828282] text-[24px] font-[400]">
-              Sites Visit
+              Site Upgrade
             </span>
           </div>
         </div>
