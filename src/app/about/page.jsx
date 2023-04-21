@@ -65,25 +65,32 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div>
-          <h1>Who We Are?</h1>
-          <p>
-            Student-real-estates is one of the most admired companies in the
-            academic industry of Nigeria. We offer services that are themselves,
-            benchmarks in their respective categories. Today,
-            student-real-estates is the undisputed leader in the pairing of
-            roommates across Nigerian institutions.
-          </p>
-        </div>
-        <div>
-          <h1>Who We Are?</h1>
-          <p>
-            Student-real-estates is one of the most admired companies in the
-            academic industry of Nigeria. We offer services that are themselves,
-            benchmarks in their respective categories. Today,
-            student-real-estates is the undisputed leader in the pairing of
-            roommates across Nigerian institutions.
-          </p>
+        <div className="pl-36 pr-[62px] text-black space-y-12">
+          <div className="flex justify-center items-start flex-col">
+            <div className="text-center">
+              <h1 className="font-bold text-[52px] text-center">Who We Are?</h1>
+            </div>
+            <p className="font-normal text-2xl">
+              Student-real-estates is one of the most admired companies in the
+              academic industry of Nigeria. We offer services that are
+              themselves, benchmarks in their respective categories. Today,
+              student-real-estates is the undisputed leader in the pairing of
+              roommates across Nigerian institutions.
+            </p>
+          </div>
+
+          <div className="flex justify-center items-start flex-col">
+            <div className="text-center">
+              <h1 className="font-bold text-[52px] text-center">Who We Are?</h1>
+            </div>
+            <p className="font-normal text-2xl">
+              Student-real-estates is one of the most admired companies in the
+              academic industry of Nigeria. We offer services that are
+              themselves, benchmarks in their respective categories. Today,
+              student-real-estates is the undisputed leader in the pairing of
+              roommates across Nigerian institutions.
+            </p>
+          </div>
         </div>
       </div>
 
