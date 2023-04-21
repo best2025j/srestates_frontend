@@ -7,10 +7,9 @@ import image2 from "../../../Assets/svg/ig.svg";
 import image3 from "../../../Assets/svg/Twitter logo.svg";
 import image4 from "../../../Assets/svg/whatsapp.svg";
 
-
 export default function ContactPage() {
   return (
-    <div className="h-screen bg-white w-full py-20">
+    <div className="h-screen bg-white w-full py-[4rem]">
       <div className="relative">
         <div className="animate__animated animate__pulse bg-gradient-to-r from-[#FE5200] to-[#00A0E3] h-full w-full">
           <Image
@@ -39,30 +38,30 @@ export default function ContactPage() {
             </p>
           </div>
         </div>
+      </div>
 
+      <div>
+        <h1> You Can Call Us On Our Direct Line:</h1>
         <div>
-          <h1> You Can Call Us On Our Direct Line:</h1>
-          <div>
-            <span className="">070 222 32 574 </span>
-            <span className="">070 341 32 798</span>
-          </div>
+          <span className="">070 222 32 574 </span>
+          <span className="">070 341 32 798</span>
         </div>
+      </div>
 
-        <div>
-          <h1> Our Social Media Handle Are Also Very Active</h1>
-          <div className="flex flex-row space-x-[20px] md:space-x-20">
-            <div>
-              <Image src={image1} alt="fb" />
-            </div>
-            <div>
-              <Image src={image2} alt="ig" />
-            </div>
-            <div>
-              <Image src={image3} alt="tw" />
-            </div>
-            <div>
-              <Image src={image4} alt="wh" />
-            </div>
+      <div>
+        <h1> Our Social Media Handle Are Also Very Active</h1>
+        <div className="flex flex-row space-x-[20px] md:space-x-20">
+          <div>
+            <Image src={image1} alt="fb" />
+          </div>
+          <div>
+            <Image src={image2} alt="ig" />
+          </div>
+          <div>
+            <Image src={image3} alt="tw" />
+          </div>
+          <div>
+            <Image src={image4} alt="wh" />
           </div>
         </div>
       </div>

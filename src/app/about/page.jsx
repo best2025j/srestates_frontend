@@ -66,10 +66,8 @@ export default function AboutPage() {
         </div>
 
         <div className="pl-36 pr-[62px] text-black space-y-12">
-          <div className="flex justify-center items-start flex-col">
-            <div className="text-center">
-              <h1 className="font-bold text-[52px] text-center">Who We Are?</h1>
-            </div>
+          <div className="flex flex-col">
+            <h1 className="font-bold text-[52px] text-center">Who We Are?</h1>
             <p className="font-normal text-2xl">
               Student-real-estates is one of the most admired companies in the
               academic industry of Nigeria. We offer services that are
@@ -79,10 +77,8 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="flex justify-center items-start flex-col">
-            <div className="text-center">
-              <h1 className="font-bold text-[52px] text-center">Who We Are?</h1>
-            </div>
+          <div className="flex flex-col">
+            <h1 className="font-bold text-[52px] text-center">Who We Are?</h1>
             <p className="font-normal text-2xl">
               Student-real-estates is one of the most admired companies in the
               academic industry of Nigeria. We offer services that are
