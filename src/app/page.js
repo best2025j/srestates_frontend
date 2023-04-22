@@ -1,7 +1,4 @@
 "use client";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-
 import React from "react";
 import { Hero } from "@/components/UI/Hero";
 import { Section } from "@/components/UI/Section";

@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import React from "react";
 import image from "../../../Assets/images/hand-phone.png";
@@ -9,6 +10,10 @@ import image4 from "../../../Assets/svg/whatsapp.svg";
 import DirectMessage from "@/components/UI/DirectMessage";
 import Pagination from "@/components/UI/Pagination";
 import Bg_image from "@/components/UI/Bg_image";
+
+export const metaData = {
+  title: "Contact",
+};
 
 export default function ContactPage() {
   return (
