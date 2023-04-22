@@ -8,7 +8,7 @@ html {
 
 @layer base {
   body {
-    @apply font-serif bg-white dark:bg-black/20;
+    @apply font-serif bg-white dark:bg-black/20 no-scrollbar overflow-y-scrool;
   }
 }
 

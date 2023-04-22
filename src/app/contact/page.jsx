@@ -6,10 +6,13 @@ import image1 from "../../../Assets/svg/fb.svg";
 import image2 from "../../../Assets/svg/ig.svg";
 import image3 from "../../../Assets/svg/Twitter logo.svg";
 import image4 from "../../../Assets/svg/whatsapp.svg";
+import DirectMessage from "@/components/UI/DirectMessage";
+import Pagination from "@/components/UI/Pagination";
+import Bg_image from "@/components/UI/Bg_image";
 
 export default function ContactPage() {
   return (
-    <div className="h-full bg-white w-full py-[4rem]">
+    <div className="h-full dark:text-white w-full py-[4rem]">
       <div className="relative pb-10">
         <div className="animate__animated animate__pulse bg-gradient-to-r from-[#FE5200] to-[#00A0E3] h-full w-full">
           <Image
@@ -26,8 +29,8 @@ export default function ContactPage() {
           />
         </div>
 
-        <div className="flex justify-center items-center animate__animated animate__backInDown inset-0 left-0 h-full flex-col absolute top-0 text-center w-full md:space-y-[105px]">
-          <div className="max-w-xs md:max-w-[65rem] space-y-[30px]">
+        <div className="flex justify-center items-center text-white animate__animated animate__backInDown inset-0 left-0 h-full flex-col absolute top-0 text-center w-full md:space-y-[105px]">
+          <div className="max-w-xs md:max-w-[50rem] space-y-[30px]">
             <h1 className="md:text-7xl font-bold text-[24px]">Contact Us</h1>
             <p className="text-2xl">
               <i>
@@ -40,20 +43,20 @@ export default function ContactPage() {
         </div>
       </div>
 
-
-      <div className="space-y-6 flex flex-col justify-center items-center">
-        <div className="space-y-[100px] font-bold">
-          <h1 className="text-[52px]"> You Can Call Us On Our Direct Line:</h1>
-          <div className="flex space-x-[32px] text-center">
-            <h1 className="text-[42px]">070 222 32 574 </h1>
-            <h1 className="text-[42px]">070 341 32 798</h1>
+      <div className="space-y-28 flex flex-col justify-center items-center">
+        <div className="space-y-12 font-bold">
+          <h1 className="text-4xl"> You Can Call Us On Our Direct Line:</h1>
+          <div className="flex space-x-[32px] justify-center">
+            <h1 className="text-3xl">070 222 32 574 </h1>
+            <h1 className="text-3xl">070 341 32 798</h1>
           </div>
         </div>
 
-        
-        <div className="space-y-[100px] py-60">
-          <h1 className="font-bold text-[52px] text-center"> Our Social Media Handle Are Also Very Active</h1>
-          <div className="flex flex-row space-x-[20px] md:space-x-20">
+        <div className="space-y-20 pb-20 max-w-3xl">
+          <h1 className="font-bold text-5xl text-center">
+            Our Social Media Handle Are Also Very Active
+          </h1>
+          <div className="flex flex-row space-x-[12px] md:space-x-20 justify-center">
             <div>
               <Image src={image1} alt="fb" />
             </div>
@@ -69,10 +72,9 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-
-      <div className="">
-        <Image />
-      </div>
+      <Pagination />
+      <DirectMessage />
+      <Bg_image />
     </div>
   );
 }

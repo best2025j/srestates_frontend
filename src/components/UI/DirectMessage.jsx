@@ -4,7 +4,7 @@ import Form from "../Form";
 
 export default function DirectMessage() {
   return (
-    <div className="flex flex-col w-full h-full  justify-center items-center mx-auto ">
+    <div className="flex flex-col w-full h-full pt-14 justify-center items-center mx-auto ">
       <div className="text-center max-w-xs md:max-w-3xl space-y-[10px]">
         <h1 className="md:text-[3.2rem] text-[1.63rem] font-bold ">
           Shoot Us a Direct Message If You Need Any Help
