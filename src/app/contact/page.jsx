@@ -41,18 +41,18 @@ export default function ContactPage() {
       </div>
 
 
-      <div className="space-y-6">
-        <div className="space-y-4">
-          <h1 className="text-[52px] font-bold"> You Can Call Us On Our Direct Line:</h1>
-          <div className="flex items">
-            <span className="">070 222 32 574 </span>
-            <span className="">070 341 32 798</span>
+      <div className="space-y-6 flex flex-col justify-center items-center">
+        <div className="space-y-[100px] font-bold">
+          <h1 className="text-[52px]"> You Can Call Us On Our Direct Line:</h1>
+          <div className="flex space-x-[32px] text-center">
+            <h1 className="text-[42px]">070 222 32 574 </h1>
+            <h1 className="text-[42px]">070 341 32 798</h1>
           </div>
         </div>
 
         
-        <div className="space-y-6">
-          <h1> Our Social Media Handle Are Also Very Active</h1>
+        <div className="space-y-[100px] py-60">
+          <h1 className="font-bold text-[52px] text-center"> Our Social Media Handle Are Also Very Active</h1>
           <div className="flex flex-row space-x-[20px] md:space-x-20">
             <div>
               <Image src={image1} alt="fb" />
@@ -68,6 +68,10 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="">
+        <Image />
       </div>
     </div>
   );

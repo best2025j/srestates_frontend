@@ -9,10 +9,8 @@ import cross from "../../../Assets/svg/firstAid.svg";
 import blood from "../../../Assets/svg/blood.svg";
 import wifi from "../../../Assets/svg/wifi-find.svg";
 import "animate.css";
-import { Carousel } from "@mantine/carousel";
 import Table from "../../components/Table";
 import Pagination from "../../components/UI/Pagination";
-import MdWifiFind from "react-icons/md";
 import Background_Image from "@/components/Background_Image";
 import DirectMessage from "@/components/UI/DirectMessage";
 import Bg_image from "@/components/UI/Bg_image";
@@ -46,7 +44,7 @@ export default function AboutPage() {
               <h1 className="md:text-[3.3rem] font-bold text-[24px]">
                 Get a Roommate Of Your Choice and Make New Friend(s)
               </h1>
-              <p className="text-sm">
+              <p className="text-2xl font-normal">
                 <i>
                   Click on the link button below to know more about getting a
                   roommate.
@@ -78,13 +76,14 @@ export default function AboutPage() {
           </div>
 
           <div className="flex flex-col">
-            <h1 className="font-bold text-[52px] text-center">Who We Are?</h1>
+            <h1 className="font-bold text-[52px] text-center">Our Goal</h1>
             <p className="font-normal text-2xl">
-              Student-real-estates is one of the most admired companies in the
-              academic industry of Nigeria. We offer services that are
-              themselves, benchmarks in their respective categories. Today,
-              student-real-estates is the undisputed leader in the pairing of
-              roommates across Nigerian institutions.
+              As far as students academic success is concerned, our aim is to
+              help students get settled quickly in school and make them
+              comfortable. We get students their dream roommate by finding them
+              individuals who corresponds to their lifestyle. Active since 2020,
+              we are currently expanding our services to other countries around
+              the world.
             </p>
           </div>
         </div>
