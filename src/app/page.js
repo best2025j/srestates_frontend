@@ -12,7 +12,7 @@ import Bg_image from "@/components/UI/Bg_image";
 
 const page = () => {
   return (
-    <main className="">
+    <main className="overflow-y-scrollbar no-scrollbar">
       <Hero />
       <Section />
       <SearchSchools />
