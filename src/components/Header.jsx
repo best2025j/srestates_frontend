@@ -58,7 +58,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              href="/auth/login"
+              href="/login"
               className="hover:text-orange10 active:text-orange10 focus:text-orange10"
             >
               Log In
@@ -66,7 +66,7 @@ const Header = () => {
           </li>
 
           <button className=" bg-orange10 rounded-xl h-10 w-[169px] ">
-            <Link href="/auth/signup">SignUp</Link>
+            <Link href="/signup">SignUp</Link>
           </button>
 
           <DarkModeSwitch />

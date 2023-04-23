@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "18": "^0.0.0",
     "@emotion/react": "^11.10.6",
     "@emotion/server": "^11.10.0",
     "@mantine/carousel": "^6.0.8",
@@ -33,11 +34,11 @@
     "embla-carousel-react": "^7.1.0",
     "next": "^13.3.0",
     "next-themes": "^0.2.1",
-    "node": "^19.8.1",
+    "node": "^18.15.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
-    "sharp": "0.22.1"
+    "sharp": "^0.32.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
