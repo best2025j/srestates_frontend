@@ -5,7 +5,7 @@ import frame90 from "../../../Assets/svg/Frame90.svg";
 import image1 from "../../../Assets/svg/fb.svg";
 import image2 from "../../../Assets/svg/ig.svg";
 import image3 from "../../../Assets/svg/Twitter logo.svg";
-import image4 from "../../../Assets/svg/whatsapp.svg";     
+import image4 from "../../../Assets/svg/whatsapp.svg";
 import frame from "../../../Assets/images/Frame.png";
 import women from "../../../Assets/images/ladies2.png";
 import "animate.css";
@@ -16,22 +16,22 @@ export const Hero = () => {
       <div className="relative">
         <Image
           src={frame}
-          alt=""
+          alt="background image"
           className="w-full object-cover h-full mix-blend-normal"
         />
 
-        <div className="absolute top-0 mt-[4rem] md:flex flex-1 md:flex-row justify-between">
-          <div className="md:max-w-xl md:px-8 px-6">
+        <div className="absolute top-0 mt-[4rem] md:flex flex-1 md:flex-row ">
+          <div className="md:max-w-xl md:px-10 px-6">
             <div className="md:pl-10 pl-5 pt-[4px]">
               <Image
                 src={frame90}
-                alt=""
+                alt="Grid box"
                 className="w-[136px] h-[58px] md:w-auto md:h-auto"
               />
             </div>
 
-            <div className="space-y-12 md:space-y-20">
-              <h1 className="font-normal md:font-bold md:w-[671px] md:h-[227px] md:text-[58px] text-[32px] w-[298px] h-[105px]">
+            <div className="space-y-12 md:space-y-20 max-w-xl">
+              <h1 className="font-normal md:font-bold md:text-[58px] text-[32px]">
                 Find your dream roommate and your next best friend
               </h1>
               <h3 className="text-2xl md:flex hidden font-normal">
