@@ -1,9 +1,9 @@
 "use client";
+import { useRouter } from "next/navigation";
 import "./globals.css";
 import Providers from "./Providers";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { useRouter } from "next/navigation";
 
 export default function RootLayout({ children }) {
   const router = useRouter();
@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body>
         <Providers>
           {!isAuthPage && <Header />}
-          {children}
+          <main className="grow"> {children}</main>
           {!isAuthPage && <Footer />}
         </Providers>
       </body>

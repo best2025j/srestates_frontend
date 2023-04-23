@@ -12,8 +12,9 @@ const DarkModeSwitch = () => {
   useEffect(() => setMounted(true), []);
 
   const currentTheme = theme === "system" ? systemTheme : theme;
+  
   return (
-    <>
+    <div>
       {mounted &&
         (currentTheme === "dark" ? (
           <Image
@@ -30,7 +31,7 @@ const DarkModeSwitch = () => {
             onClick={() => setTheme("dark")}
           />
         ))}
-    </>
+    </div>
   );
 };
 

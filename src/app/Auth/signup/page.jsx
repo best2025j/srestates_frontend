@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import RootLayout from "../layout";
+import RootLayout from "../../layout";
 
 export const metaData = {
   title: "SignUp",
@@ -15,4 +15,3 @@ export default function page() {
     </RootLayout>
   );
 }
-my;
