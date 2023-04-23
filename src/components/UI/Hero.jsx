@@ -12,14 +12,13 @@ import "animate.css";
 
 export const Hero = () => {
   return (
-    <div className="h-full w-full pb-40 md:pb-0">
+    <div className="h-full w-full pb-96 md:pb-0">
       <div className="relative">
         <Image
           src={frame}
           alt="background image"
           className="w-full object-cover h-full mix-blend-normal"
         />
-
         <div className="absolute top-0 mt-[4rem] md:flex flex-1 md:flex-row ">
           <div className="md:max-w-xl md:px-10 px-6">
             <div className="md:pl-10 pl-5 pt-[4px]">

@@ -6,7 +6,7 @@ import image2 from "../../../Assets/images/Frame 96(2).png";
 
 export const Section = () => {
   return (
-    <div className="w-full h-full md:mt-40 my-52 px-8">
+    <div className="w-full h-full md:pt-8 md:py-0 py-52 px-8">
       <div className="text-center">
         <h1 className="text-[26px] md:text-[52px] font-bold">Our Interest</h1>
         <h1 className="md:text-2xl text-xs font-normal">
@@ -14,12 +14,13 @@ export const Section = () => {
         </h1>
       </div>
 
-      <div className="py-20 md:flex justify-between items-center">
+      <div className="py-20 flex justify-between items-start w-full h-full flex-col md:flex-row">
         <div className="flex md:flex-row flex-col">
           <div className="space-y-5 h-full">
             <h1 className="md:text-[2.625rem] text-xl font-bold">
               Find a Roommate
             </h1>
+
             <p className="md:max-w-md max-w-[253px] text-sm md:text-2xl font-normal">
               Our database is updated every day with new profiles of potential
               roommates you can find around you. Sign up, fill out your profile
@@ -30,11 +31,11 @@ export const Section = () => {
             </button>
           </div>
         </div>
-        
-          <Image src={image} alt="two ladies" />
+
+        <Image src={image} alt="two ladies" />
       </div>
 
-      <div className="md:flex justify-between md:flex-row-reverse items-center">
+      <div className="flex justify-between items-start w-full h-full md:flex-row-reverse flex-col">
         <div className="flex md:flex-row flex-col">
           <div className="space-y-5 h-full">
             <h1 className="sm:text-[2.625rem] text-xl font-bold">

@@ -1,53 +1,31 @@
 "use client";
-import { useRouter } from "next/router";
+import "./globals.css";
 import Providers from "./Providers";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { useRouter } from "next/navigation";
 
-export default function RootLayout({ children }) {
+const noNav = ["/login", "/signup"];
+const noFooter = ["/", "/login", "/signup"];
+
+export default function RootLayout({
+  children,
+  shouldHideHeaderFooter = false,
+}) {
   const router = useRouter();
-  const { pathname } = router;
-
-  const hideHeaderFooterRoutes = ["/login", "/signup"];
-  const shouldHideHeaderFooter = hideHeaderFooterRoutes.includes(pathname);
+  const { asPath } = router;
 
   return (
-    <Providers>
-      {!shouldHideHeaderFooter && <Header />}
-      <main>{children}</main>
-      {!shouldHideHeaderFooter && <Footer />}
-    </Providers>
+    <html lang="en">
+      <body>
+        <Providers>
+          {shouldHideHeaderFooter || noNav.includes(asPath) ? null : <Header />}
+          <main>{children}</main>
+          {shouldHideHeaderFooter || noFooter.includes(asPath) ? null : (
+            <Footer />
+          )}
+        </Providers>
+      </body>
+    </html>
   );
 }
-
-// "use client";
-// // Import necessary modules and components
-// import "./globals.css";
-// import Providers from "./Providers";
-// import Header from "../components/Header";
-// import Footer from "../components/Footer";
-// import { useRouter } from "next/navigation";
-
-// // Define the RootLayout component
-// export default function RootLayout({ children }) {
-//   // Use the useRouter hook to get the current route
-//   const router = useRouter();
-//   const { asPath } = router;
-
-//   // Determine whether to show the header and footer based on the current route
-//   const noNav = ["/login", "/signup"];
-//   const noFooter = ["/", "/login", "/signup"];
-
-//   // Render the layout with Providers, Header, Footer, and children components
-//   return (
-//     <html lang="en">
-//       <body>
-//         <Providers>
-//           {noNav.includes(asPath) ? null : <Header />}
-//           <main>{children}</main>
-//           {noFooter.includes(asPath) ? null : <Footer />}
-//         </Providers>
-//       </body>
-//     </html>
-//   );
-// }
