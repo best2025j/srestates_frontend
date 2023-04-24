@@ -6,9 +6,11 @@ import "animate.css";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Link from "next/link";
 import DarkModeSwitch from "./DarkModeSwitch";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
+  const pathname = usePathname();
 
   const handClick = () => {
     setNav(!nav);
@@ -16,6 +18,13 @@ const Header = () => {
 
   const handClose = () => {
     setNav(!nav);
+  };
+
+  const handleClick = (event) => {
+    event.preventDefault();
+    console.log("Link clicked, but prevented default behavior");
+    console.log("Link clicked, but prevented default behavior");
+    pathname.push("/");
   };
 
   return (
@@ -35,6 +44,7 @@ const Header = () => {
           <li>
             <Link
               href="/"
+              onClick={handleClick}
               className="hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
             >
               Home

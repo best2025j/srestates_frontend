@@ -3,6 +3,10 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = {
+  target: "server",
+};
+
+module.exports = nextConfig;
