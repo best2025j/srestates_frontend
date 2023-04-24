@@ -12,7 +12,7 @@ const DarkModeSwitch = () => {
   useEffect(() => setMounted(true), []);
 
   const currentTheme = theme === "system" ? systemTheme : theme;
-  
+
   return (
     <div>
       {mounted &&
