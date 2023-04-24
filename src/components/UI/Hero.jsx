@@ -71,7 +71,7 @@ export const Hero = () => {
             <Image
               src={women}
               alt="two african women"
-              className=" md:h-[686px] md:w-[952px] h-auto w-auto  animate__animated animate__fadeIn object-cover"
+              className=" md:h-[686px] md:w-[952px] h-auto w-auto animate__animated animate__fadeIn object-cover"
             />
           </div>
         </div>

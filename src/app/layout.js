@@ -5,8 +5,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useRouter } from "next/navigation";
 
-const noNav = ["/login", "/signup"];
-const noFooter = ["/", "/login", "/signup"];
+const noNav = ["/destop" "/login", "/signup"];
+const noFooter = ["/destop" "/login", "/signup"];
 
 export default function RootLayout({
   children,

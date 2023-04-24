@@ -26,6 +26,7 @@ export default function Bg_image() {
               </i>
             </p>
           </div>
+
           <div className="">
             <button className=" bg-orange_light md:w-[35.8rem] w-full h-full z-94 md:text-2xl md:h-14 border border-orange10 text-orange10 rounded-xl">
               Guides on how to request a friend or roommateZZ
