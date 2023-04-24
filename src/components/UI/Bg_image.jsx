@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import { BackgroundImage } from "@mantine/core";
 import React from "react";
@@ -19,7 +19,7 @@ export default function Bg_image() {
               Would You Like To Know How To Get A Friend Or Roommate On
               Student-real-estate?
             </h1>
-            <p className="text-2xl">
+            <p className="text-xs md:text-2xl">
               <i>
                 Click on the link button below to know more about getting a
                 roommate.

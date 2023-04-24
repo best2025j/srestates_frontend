@@ -23,11 +23,11 @@ const Pagination = () => {
       <div className="">
         <Carousel
           withIndicators
-          // height={400}
-          // max={300}
-          // controlSize={40}
-          // slideGap="md"
-          // align="start"
+          height={400}
+          max={300}
+          controlSize={40}
+          slideGap="md"
+          align="start"
           styles={{
             control: {
               "&[data-inactive]": {

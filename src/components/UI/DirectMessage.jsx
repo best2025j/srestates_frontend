@@ -14,10 +14,10 @@ export default function DirectMessage() {
         </p>
       </div>
 
-      <div className="bg-orange_light dark:bg-black md:py-20 py-10 my-20 md:w-[900px] w-80 border border-[#00A0E3] h-full rounded-xl">
+      <div className="bg-orange_light dark:bg-black md:py-20 py-10 my-20 md:w-[900px] w-[22.8rem] border border-[#00A0E3] h-full rounded-xl">
         <Form />
         <div className="flex justify-center items-center pt-28 text-white">
-          <button className="sm:w-[264px] w-[150px] h-[45px]  bg-orange10 sm:h-[60.1px] rounded-xl">
+          <button className="sm:w-[264px] w-[150px] h-[45px] bg-orange10 sm:h-[60.1px] rounded-xl">
             Send Message
           </button>
         </div>
