@@ -1,8 +1,20 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import RootLayout from "../layout";
 import Link from "next/link";
 
-export default function page() {
+export default function DesktopPage() {
+  const [count, setCount] = useState(0);
+
+  // This will run after the first render and every time 'count' changes
+  useEffect(() => {
+    document.title = `Count: ${count}`;
+  }, [count]);
+
+  function handleClick() {
+    setCount(count + 1);
+  }
+
   return (
     <RootLayout shouldHideHeaderFooter={true}>
       <div className="h-screen w-full py-20 flex flex-col justify-center items-center space-y-6">
@@ -27,6 +39,10 @@ export default function page() {
               error will lead to disactivating your account
             </i>
           </p>
+          <div>
+            <p>Count: {count}</p>
+            <button onClick={handleClick}>Increment Count</button>
+          </div>
         </div>
       </div>
     </RootLayout>

@@ -1,7 +1,7 @@
 import { Button } from "@mantine/core";
 import React from "react";
 import { IoMdContact, IoMdMail } from "react-icons/io";
-import { MdOutlineAlternateEmail, MdOutlinePhoneIphone } from "react-icons/md";
+import { MdOutlinePhoneIphone } from "react-icons/md";
 
 const Form = () => {
   return (
