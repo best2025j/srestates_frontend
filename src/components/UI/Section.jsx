@@ -14,7 +14,7 @@ export const Section = () => {
         </h1>
       </div>
 
-      <div className="py-20 flex justify-between items-start w-full h-full flex-col md:flex-row">
+      <div className="py-20 flex justify-between items-start w-full h-full flex-col md:flex-row text-justify">
         <div className="flex md:flex-row flex-col">
           <div className="space-y-5 h-full">
             <h1 className="md:text-[2.625rem] text-xl font-bold">

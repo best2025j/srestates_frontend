@@ -6,7 +6,7 @@ export const metaData = {
   title: "Login",
 };
 
-export default function LoginPage(props) {
+export default function LoginPage() {
   return (
     <RootLayout shouldHideHeaderFooter={true}>
       <main className="py-40 font-bold">
