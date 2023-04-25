@@ -8,10 +8,8 @@ export const metaData = {
 
 export default function page() {
   return (
-    <RootLayout shouldHideHeaderFooter={true}>
-      <main className="py-40 text-bold">
-        <h1>signup page</h1>
-      </main>
-    </RootLayout>
+    <main className="py-40 text-bold">
+      <h1>signup page</h1>
+    </main>
   );
 }

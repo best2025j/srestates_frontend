@@ -2,13 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* html {
+html {
   scroll-behavior: smooth;
-} */
+}
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
 
 @layer base {
   body {
-    @apply font-serif bg-white dark:bg-black/20;
+    @apply font-sans bg-white dark:bg-black/20;
   }
 }
 

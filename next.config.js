@@ -5,8 +5,8 @@ const nextConfig = {
   },
 };
 
-module.exports = {
-  target: "server",
-};
+// module.exports = {
+//   target: "server",
+// };
 
 module.exports = nextConfig;

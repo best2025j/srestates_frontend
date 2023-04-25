@@ -1,16 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import image from "../../Assets/images/HeaderLogo.png";
-import "animate.css";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import logo from "../../Assets/images/HeaderLogo.png";
 import Link from "next/link";
 import DarkModeSwitch from "./DarkModeSwitch";
-import { usePathname } from "next/navigation";
+import "animate.css";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
-const Header = () => {
+export default function Header() {
   const [nav, setNav] = useState(false);
-  const pathname = usePathname();
 
   const handClick = () => {
     setNav(!nav);
@@ -20,32 +18,32 @@ const Header = () => {
     setNav(!nav);
   };
 
-  const handleClick = (event) => {
-    event.preventDefault();
-    console.log("Link clicked, but prevented default behavior");
-    console.log("Link clicked, but prevented default behavior");
-    pathname.push("/");
-  };
+  console.log("handClick");
 
   return (
-    <header
+    <div
       className={
         nav
           ? " bg-orange_light dark:bg-black h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
           : "dark:bg-black bg-orange_light h-[70px] py-[10.5px] sm:px-[64px] px-[36px] w-full fixed z-[10]"
       }
     >
-      <nav className="flex justify-between h-full w-full items-center">
+      <div className="flex justify-between h-full w-full items-center">
         <Link href="/">
-          <Image src={image} alt="home" className="w-12 h-10" />
+          <Image
+            width={500}
+            height={500}
+            src={logo}
+            alt="home"
+            className="w-12 h-10"
+          />
         </Link>
 
         <ul className="md:flex hidden items-center space-x-6">
           <li>
             <Link
               href="/"
-              onClick={handleClick}
-              className="hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
+              className="text-base font-normal hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
             >
               Home
             </Link>
@@ -53,7 +51,7 @@ const Header = () => {
           <li>
             <Link
               href="/about"
-              className="hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
+              className="text-base font-normal hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
             >
               About Us
             </Link>
@@ -61,7 +59,7 @@ const Header = () => {
           <li>
             <Link
               href="/contact"
-              className="hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
+              className="text-base font-normal hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
             >
               Contact Us
             </Link>
@@ -69,16 +67,14 @@ const Header = () => {
           <li>
             <Link
               href="/login"
-              className="hover:text-orange10 active:text-orange10 focus:text-orange10"
+              className="text-base font-normal hover:text-orange10 active:text-orange10 focus:text-orange10"
             >
               Log In
             </Link>
           </li>
-
-          <button className=" bg-orange10 rounded-xl h-10 w-[169px] ">
+          <button className="text-base font-normal bg-orange10 rounded-xl h-10 w-[169px] ">
             <Link href="/signup">SignUp</Link>
           </button>
-
           <DarkModeSwitch />
         </ul>
 
@@ -89,7 +85,7 @@ const Header = () => {
             <AiOutlineMenu className="w-7 h-7" />
           )}
         </button>
-      </nav>
+      </div>
 
       {/* mobile view */}
 
@@ -104,7 +100,7 @@ const Header = () => {
           <li onClick={handClose}>
             <Link
               href="/"
-              className="hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
+              className="text-base font-normal hover:text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
             >
               Home
             </Link>
@@ -145,8 +141,6 @@ const Header = () => {
           </div>
         </ul>
       </div>
-    </header>
+    </div>
   );
-};
-
-export default Header;
+}
