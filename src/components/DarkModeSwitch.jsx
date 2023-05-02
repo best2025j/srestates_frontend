@@ -1,7 +1,6 @@
 "user client";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
-// import { Image } from "@mantine/core";
 import Image from "next/image";
 import darkmode from "../../Assets/svg/Darkmode.svg";
 import lightmode from "../../Assets/svg/Lightmode.svg";
@@ -9,6 +8,7 @@ import lightmode from "../../Assets/svg/Lightmode.svg";
 const DarkModeSwitch = () => {
   const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+
   useEffect(() => setMounted(true), []);
 
   const currentTheme = theme === "system" ? systemTheme : theme;

@@ -19,6 +19,8 @@ export default function NotFound() {
       <div>
         <Image
           src={image}
+          width="auto"
+          height="auto"
           alt="error image"
           className="w-[321px] h-[200px] md:w-auto md:h-auto md:flex pt-6 md:pt-0 animate__animated animate__fadeIn md:p-0 mx-auto"
         />

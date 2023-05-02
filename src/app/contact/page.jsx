@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React from "react";
 import image from "../../../Assets/images/hand-phone.png";
@@ -21,6 +21,8 @@ export default function ContactPage() {
       <div className="relative pb-10">
         <div className="animate__animated animate__pulse bg-gradient-to-r from-[#FE5200] to-[#00A0E3] h-full w-full">
           <Image
+            width="auto"
+            height="auto"
             src={image}
             alt="ladies pix"
             className="h-[636px] w-full md:h-auto md:w-auto mix-blend-overlay opacity-50"
@@ -28,6 +30,8 @@ export default function ContactPage() {
         </div>
         <div className="md:pl-10 pl-5 pt-[4px] absolute top-0">
           <Image
+            width="auto"
+            height="auto"
             src={frame90}
             alt=""
             className="w-[136px] h-[58px] md:w-auto md:h-auto"
@@ -63,16 +67,16 @@ export default function ContactPage() {
           </h1>
           <div className="flex flex-row space-x-[12px] md:space-x-20 justify-center">
             <div>
-              <Image src={image1} alt="fb" />
+              <Image width="auto" height="auto" src={image1} alt="fb" />
             </div>
             <div>
-              <Image src={image2} alt="ig" />
+              <Image width="auto" height="auto" src={image2} alt="ig" />
             </div>
             <div>
-              <Image src={image3} alt="tw" />
+              <Image width="auto" height="auto" src={image3} alt="tw" />
             </div>
             <div>
-              <Image src={image4} alt="wh" />
+              <Image width="auto" height="auto" src={image4} alt="wh" />
             </div>
           </div>
         </div>

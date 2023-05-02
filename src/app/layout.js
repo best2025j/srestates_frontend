@@ -1,21 +1,28 @@
+"use client";
 import "./globals.css";
 import React from "react";
 import Providers from "./Providers";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
-// export const metadata = {
-//   title: "Home",
-//   description: "Welcome to Next.js",
-// };
+import { usePathname } from "next/navigation";
 
 export default function RootLayout({ children }) {
+  const pathname = usePathname();
+
+  const noHeader = ["/login, /signup"];
+  const noFooter = ["/, /login, /signup"];
+
+  const shouldHideHeader = noHeader.includes(pathname);
+  const shouldHideFooter = noFooter.includes(pathname);
+
+  console.log(shouldHideFooter, shouldHideHeader);
+
   return (
     <body>
       <Providers>
-        <Header />
+        {shouldHideHeader ? null : <Header />}
         {children}
-        <Footer />
+        {shouldHideFooter ? null : <Footer />}
       </Providers>
     </body>
   );

@@ -26,6 +26,8 @@ export default function AboutPage() {
         <div className="relative">
           <div className="animate__animated animate__pulse bg-gradient-to-r from-[#FE5200] to-[#00A0E3] h-full w-full">
             <Image
+              width="auto"
+              height="auto"
               src={image}
               alt="ladies pix"
               className="h-[636px] w-full md:h-auto md:w-auto mix-blend-overlay opacity-50"
@@ -33,6 +35,8 @@ export default function AboutPage() {
           </div>
           <div className="md:pl-10 pl-5 pt-[4px] absolute top-0">
             <Image
+              width="auto"
+              height="auto"
               src={frame90}
               alt=""
               className="w-[136px] h-[58px] md:w-auto md:h-auto"
@@ -91,9 +95,9 @@ export default function AboutPage() {
 
       <div className="flex flex-col py-56 space-y-6">
         <div className="flex ml-16 h-full overflow-x-scroll no-scrollbar">
-          <Image src={image1} alt="" className="" />
-          <Image src={image2} alt="" className="" />
-          <Image src={image3} alt="" className="" />
+          <Image width="auto" height="auto" src={image1} alt="" className="" />
+          <Image width="auto" height="auto" src={image2} alt="" className="" />
+          <Image width="auto" height="auto" src={image3} alt="" className="" />
         </div>
 
         <div className="flex justify-center items-center space-x-1">
@@ -150,7 +154,7 @@ export default function AboutPage() {
         <div className="flex flex-row items-center gap-[92px] px-24 py-[99px]">
           <div className="space-y-[20px]">
             <div>
-              <Image src={cross} alt="cross" />
+              <Image width="auto" height="auto" src={cross} alt="cross" />
             </div>
             <div>
               <h1 className="text-2xl">Serve First</h1>
@@ -162,7 +166,7 @@ export default function AboutPage() {
           </div>
           <div className="space-y-[20px]">
             <div>
-              <Image src={blood} alt="cross" />
+              <Image width="auto" height="auto" src={blood} alt="cross" />
             </div>
             <div>
               <h1 className="text-2xl">Transparency</h1>
@@ -174,7 +178,7 @@ export default function AboutPage() {
           </div>
           <div className="space-y-[20px]">
             <div>
-              <Image src={wifi} alt="cross" />
+              <Image width="auto" height="auto" src={wifi} alt="cross" />
             </div>
             <div>
               <h1 className="text-2xl">Reliability</h1>
