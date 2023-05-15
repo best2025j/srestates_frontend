@@ -12,17 +12,14 @@ export default function RootLayout({ children }) {
   const noHeader = ["/login, /signup"];
   const noFooter = ["/, /login, /signup"];
 
-  const shouldHideHeader = noHeader.includes(pathname);
-  const shouldHideFooter = noFooter.includes(pathname);
-
-  console.log(shouldHideFooter, shouldHideHeader);
+  console.log(noHeader, noFooter);
 
   return (
     <body>
       <Providers>
-        {shouldHideHeader ? null : <Header />}
+        {noHeader.includes(pathname) ? null : <Header />}
         {children}
-        {shouldHideFooter ? null : <Footer />}
+        {noFooter.includes(pathname) ? null : <Footer />}
       </Providers>
     </body>
   );
