@@ -1,11 +1,8 @@
 import React from "react";
 import Providers from "../Providers";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 export default function AuthLayout({ children }) {
-  const router = useRouter;
-
   return (
     <html lang="en">
       <head />
@@ -13,11 +10,11 @@ export default function AuthLayout({ children }) {
         <Providers>
           <Link
             href="/"
-            className=" gap-2 text-stone-500 hover:text-stone-800 transition-colors"
+            className="text-stone-500 hover:text-stone-800 transition-colors"
           >
             <span className="">Home</span>
           </Link>
-          <div>{children}</div>;
+          <main>{children}</main>;
         </Providers>
       </body>
     </html>

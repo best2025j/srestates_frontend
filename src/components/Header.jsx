@@ -58,7 +58,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              href="/login"
+              href="/auth/login"
               className="hover:text-orange10 active:text-orange10 focus:text-orange10"
             >
               Log In
@@ -66,7 +66,7 @@ const Header = () => {
           </li>
 
           <button className=" bg-orange10 rounded-xl h-10 w-[169px] ">
-            <Link href="/signIn">Sign In</Link>
+            <Link href="/auth/signIn">Sign In</Link>
           </button>
 
           <DarkModeSwitch />
@@ -118,7 +118,7 @@ const Header = () => {
           <li onClick={handClose}>
             <Link
               className="text-orange10 active:text-orange10 focus:text-orange10 focus:underline focus:underline-offset-4 focus:decoration-4"
-              href="/login"
+              href="/auth/login"
             >
               Log In
             </Link>
@@ -126,7 +126,7 @@ const Header = () => {
 
           <div className="">
             <button className=" bg-orange10 rounded-xl h-12 w-[169px] ">
-              <Link href="/signIn">Sign In</Link>
+              <Link href="/auth/signIn">Sign In</Link>
             </button>
           </div>
 

@@ -10,7 +10,7 @@ export default function LoginPage() {
   const router = useRouter;
 
   return (
-    <div className="py-40 font-bold">
+    <div className="ont-bold">
       <h1>login page</h1>
     </div>
   );

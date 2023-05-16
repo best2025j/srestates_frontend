@@ -29,8 +29,8 @@ export const Hero = () => {
               />
             </div>
 
-            <div className="space-y-12 md:space-y-20 max-w-xl">
-              <h1 className="font-normal md:font-bold md:text-[58px] text-[32px]">
+            <div className="space-y-12 md:space-y-20 max-w-2xl">
+              <h1 className="font-normal md:font-bold md:text-[52px] text-[32px]">
                 Find your dream roommate and your next best friend
               </h1>
               <h3 className="text-2xl md:flex hidden font-normal">
