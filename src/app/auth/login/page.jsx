@@ -1,17 +1,19 @@
 "use client";
-import { useRouter } from "next/navigation";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 export const metaData = {
   title: "Login",
 };
 
-export default function LoginPage() {
+const page = () => {
   const router = useRouter;
 
   return (
-    <div className="ont-bold">
+    <div className="py-40 font-bold">
       <h1>login page</h1>
     </div>
   );
-}
+};
+
+export default page;

@@ -15,10 +15,10 @@ export default function DesktopPage() {
 
         <div className=" flex md:flex-row flex-col py-[35px] md:py-[30px] items-center justify-center md:space-x-6 space-y-4 md:space-y-0">
           <button className="sm:w-[264px] w-[150px] h-[45px] bg-orange10 sm:h-[60.1px] rounded-xl">
-            <Link href="/signup">signup</Link>
+            <Link href="/auth/signup">signup</Link>
           </button>
           <button className="sm:w-[264px] w-[150px] h-[45px] border border-orange10 sm:h-[60.1px] rounded-xl">
-            <Link href="/login">login</Link>
+            <Link href="/auth/login">login</Link>
           </button>
         </div>
 
