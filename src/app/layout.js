@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React from "react";
 import "./globals.css";
 import Providers from "./Providers";
@@ -18,18 +18,8 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   );
-  // return (
-  //   <html lang="en">
-  //     <body>
-  //       <Providers>
-  //         <Header />
-  //         <main>{children}</main>
-  //         <Footer />
-  //       </Providers>
-  //     </body>
-  //   </html>
-  // );
 }
+
 // import React from "react";
 // import "./globals.css";
 // import Providers from "./Providers";

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import RootLayout from "../layout";
+import RootLayout from "../Layout";
 
 export const metaData = {
   title: "SignUp",
