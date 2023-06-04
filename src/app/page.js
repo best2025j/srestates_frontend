@@ -8,14 +8,14 @@ import Bg_image from "@/components/UI/Bg_image";
 
 const page = () => {
   return (
-    <div>
+    <>
       <Hero />
       <Section />
       <SearchSchools />
       <Pagination />
       <DirectMessage />
       <Bg_image />
-    </div>
+    </>
   );
 };
 

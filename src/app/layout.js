@@ -10,11 +10,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head />
       <body>
-        <Providers>
-          <Header />
-          <main className="grow">{children}</main>
-          <Footer />
-        </Providers>
+        <>
+          <Providers>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </Providers>
+        </>
       </body>
     </html>
   );
