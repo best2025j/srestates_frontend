@@ -5,7 +5,8 @@ import image from "../../Assets/images/HeaderLogo.png";
 import "animate.css";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Link from "next/link";
-import DarkModeSwitch from "../components/DarkModeSwitch";
+import DarkModeSwitch from "../../components/DarkModeSwitch";
+// import DarkModeSwitch from "../components/DarkModeSwitch";
 
 const Header = () => {
   const [nav, setNav] = useState(false);

@@ -1,3 +1,4 @@
+"use client";
 import { Loader } from "@mantine/core";
 import React from "react";
 
