@@ -2,14 +2,17 @@
 import Image from "next/image";
 import React from "react";
 import image from "../../../Assets/images/hand-phone.png";
-import frame90 from "../../../Assets/svg/Frame90.svg";
-import image1 from "../../../Assets/svg/fb.svg";
-import image2 from "../../../Assets/svg/ig.svg";
-import image3 from "../../../Assets/svg/Twitter logo.svg";
-import image4 from "../../../Assets/svg/whatsapp.svg";
-import DirectMessage from "@/components/UI/DirectMessage";
-import Pagination from "@/components/UI/Pagination";
-import Bg_image from "@/components/UI/Bg_image";
+import frame90 from "../../../Assets/svgs/Frame90.svg";
+import image1 from "../../../Assets/svgs/fb.svg";
+import image2 from "../../../Assets/svgs/ig.svg";
+import image3 from "../../../Assets/svgs/Twitter logo.svg";
+import image4 from "../../../Assets/svgs/whatsapp.svg";
+import Pagination from "../../../components/UI/Pagination";
+import DirectMessage from "../../../components/UI/DirectMessage";
+import Bg_image from "../../../components/UI/Bg_image";
+// import DirectMessage from "@/components/UI/DirectMessage";
+// import Pagination from "@/components/UI/Pagination";
+// import Bg_image from "@/components/UI/Bg_image";
 
 export const metaData = {
   title: "Contact",

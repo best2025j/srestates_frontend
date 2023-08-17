@@ -4,6 +4,7 @@ import image from "../../Assets/images/ErrorPage.png";
 import Link from "next/link";
 
 export default function NotFound() {
+  
   return (
     <div className="h-full md:flex justify-center items-center w-full py-40">
       <div className="space-y-[50px] px-14">

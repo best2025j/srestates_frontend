@@ -3,11 +3,11 @@ import { Select } from "@mantine/core";
 import Image from "next/image";
 import React from "react";
 import image1 from "../../Assets/images/Logo2.png";
-import map from "../../Assets/svg/map.svg";
-import message from "../../Assets/svg/message.svg";
+import map from "../../Assets/svgs/map.svg";
+import message from "../../Assets/svgs/message.svg";
 import twitter from "../../Assets/images/tw logo.png";
-import instagram from "../../Assets/svg/instagram.svg";
-import facebook from "../../Assets/svg/facebook logo.svg";
+import instagram from "../../Assets/svgs/instagram.svg";
+import facebook from "../../Assets/svgs/facebook logo.svg";
 
 const Footer = () => {
   return (

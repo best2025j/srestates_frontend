@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import { BackgroundImage } from "@mantine/core";
+// import { BackgroundImage } from "@mantine/core";
 import React from "react";
-import group_pix from "../../../Assets/images/Groupimage.png";
+import group_pix from "../../Assets/images/Groupimage.png";
 
 export default function Bg_image() {
   return (

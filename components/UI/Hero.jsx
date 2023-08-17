@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import frame90 from "../../../Assets/svg/Frame90.svg";
-import image1 from "../../../Assets/svg/fb.svg";
-import image2 from "../../../Assets/svg/ig.svg";
-import image3 from "../../../Assets/svg/Twitter logo.svg";
-import image4 from "../../../Assets/svg/whatsapp.svg";
+import Frame90 from "../../../Assets/svgs/Frame90.svg";
+import fb from "../../../Assets/svgs/fb.svg";
+import ig from "../../../Assets/svgs/ig.svg";
+import Twitter from "../../../Assets/svgs/Twitterlogo.svg";
+import whatsapp from "../../../Assets/svgs/whatsapp.svg";
 import frame from "../../../Assets/images/Frame.png";
 import women from "../../../Assets/images/ladies2.png";
 import "animate.css";
@@ -23,7 +23,7 @@ export const Hero = () => {
           <div className="md:max-w-xl md:px-10 px-6">
             <div className="md:pl-10 pl-5 pt-[4px]">
               <Image
-                src={frame90}
+                src={Frame90}
                 alt="Grid box"
                 className="w-[136px] h-[58px] md:w-auto md:h-auto"
               />
@@ -52,16 +52,16 @@ export const Hero = () => {
 
               <div className="flex flex-row space-x-[20px] md:space-x-20">
                 <div>
-                  <Image src={image1} alt="fb" />
+                  <Image src={fb} alt="fb" />
                 </div>
                 <div>
-                  <Image src={image2} alt="ig" />
+                  <Image src={ig} alt="ig" />
                 </div>
                 <div>
-                  <Image src={image3} alt="tw" />
+                  <Image src={Twitter} alt="tw" />
                 </div>
                 <div>
-                  <Image src={image4} alt="wh" />
+                  <Image src={whatsapp} alt="wh" />
                 </div>
               </div>
             </div>

@@ -2,7 +2,7 @@
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Image from "next/image";
 import React from "react";
-import man from "../../../Assets/images/man.png";
+import man from "../../Assets/images/man.png";
 import "animate.css";
 import { Carousel } from "@mantine/carousel";
 

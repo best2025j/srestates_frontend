@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import image3 from "../../Assets/images/IsolationMode.png";
+import image3 from "../Assets/images/IsolationMode.png";
 
 export default function Background_Image() {
   return (

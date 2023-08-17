@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import image from "../../../Assets/images/Frame 96(1).png";
-import image2 from "../../../Assets/images/Frame 96(2).png";
+import image from "../../Assets/images/Frame96(1).png";
+import image2 from "../../Assets/images/Frame96(2).png";
 
 export const Section = () => {
   return (

@@ -4,16 +4,20 @@ import image from "../../../Assets/images/young_women.png";
 import image1 from "../../../Assets/images/african-american-men-white-t-shirts.png";
 import image2 from "../../../Assets/images/full-shot-smiley-men-sitting-curb.png";
 import image3 from "../../../Assets/images/two-african-woman-friends-jeans-jacket-posed-indoor-together.png";
-import frame90 from "../../../Assets/svg/Frame90.svg";
-import cross from "../../../Assets/svg/firstAid.svg";
-import blood from "../../../Assets/svg/blood.svg";
-import wifi from "../../../Assets/svg/wifi-find.svg";
+import frame90 from "../../../Assets/svgs/Frame90.svg";
+import cross from "../../../Assets/svgs/firstAid.svg";
+import blood from "../../../Assets/svgs/blood.svg";
+import wifi from "../../../Assets/svgs/wifi-find.svg";
 import "animate.css";
-import Table from "../../components/Table";
-import Pagination from "../../components/UI/Pagination";
-import Background_Image from "@/components/Background_Image";
-import DirectMessage from "@/components/UI/DirectMessage";
-import Bg_image from "@/components/UI/Bg_image";
+import Background_Image from "../../../components/Background_Image";
+import Pagination from "../../../components/UI/Pagination";
+import DirectMessage from "../../../components/UI/DirectMessage";
+import Bg_image from "../../../components/UI/Bg_image";
+import Table from "../../../components/Table";
+// import Pagination from "../../components/UI/Pagination";
+// import Background_Image from "@/components/Background_Image";
+// import DirectMessage from "@/components/UI/DirectMessage";
+// import Bg_image from "@/components/UI/Bg_image";
 
 export const metaData = {
   title: "About",
