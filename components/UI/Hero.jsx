@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import Frame90 from "../../../Assets/svgs/Frame90.svg";
-import fb from "../../../Assets/svgs/fb.svg";
-import ig from "../../../Assets/svgs/ig.svg";
-import Twitter from "../../../Assets/svgs/Twitterlogo.svg";
-import whatsapp from "../../../Assets/svgs/whatsapp.svg";
-import frame from "../../../Assets/images/Frame.png";
-import women from "../../../Assets/images/ladies2.png";
+import Frame90 from "../../Assets/svgs/Frame90.svg";
+import fb from "../../Assets/svgs/fb.svg";
+import ig from "../../Assets/svgs/ig.svg";
+import Twitter from "../../Assets/svgs/Twitterlogo.svg";
+import whatsapp from "../../Assets/svgs/whatsapp.svg";
+import frame from "../../Assets/images/Frame.png";
+import women from "../../Assets/images/ladies2.png";
 import "animate.css";
 
 export const Hero = () => {
